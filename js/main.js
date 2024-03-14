@@ -60,6 +60,16 @@ var swiper = new Swiper(".Slider", {
   },
 });
 
+// Control About/Investors Section
+let tabToggler = document.querySelectorAll("#about-us .about-investor")
+console.log(tabToggler)
+tabToggler.forEach((tab) => {
+  tab.addEventListener("click", (e) => {
+    let sectionHead = document.querySelector("#about-us .about-investor-head");
+    sectionHead.textContent = e.target.textContent;
+  })
+})
+
 // Control News Section
 let mainImg = document.querySelector("#news .img-holder img");
 
