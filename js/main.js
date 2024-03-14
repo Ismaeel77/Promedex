@@ -70,6 +70,7 @@ tabToggler.forEach((tab) => {
   })
 })
 
+
 // Control News Section
 let mainImg = document.querySelector("#news .img-holder img");
 
