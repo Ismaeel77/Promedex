@@ -62,14 +62,23 @@ var swiper = new Swiper(".Slider", {
 
 // Control About/Investors Section
 let tabToggler = document.querySelectorAll("#about-us .about-investor")
-console.log(tabToggler)
+
 tabToggler.forEach((tab) => {
+
+  tab.addEventListener("click", handleActiveNews)
   tab.addEventListener("click", (e) => {
     let sectionHead = document.querySelector("#about-us .about-investor-head");
     sectionHead.textContent = e.target.textContent;
   })
 })
 
+// Handle Active State 
+function handleActiveNews () {
+  tabToggler.forEach((tab) => {
+    tab.classList.remove("active")
+    this.classList.add("active");
+  })
+}
 
 // Control News Section
 let mainImg = document.querySelector("#news .img-holder img");
@@ -82,6 +91,7 @@ let cards = document.querySelectorAll("#news .news-card");
 
 
 cards.forEach((card) => {
+  card.addEventListener("click", handleActiveCards)
   card.addEventListener("click", () => {
     let cardImg = card.querySelector("img");
     mainImg.src = cardImg.src;
@@ -91,3 +101,12 @@ cards.forEach((card) => {
     mainText.textContent = cardText;
   });
 });
+
+
+// Handle Active State 
+function handleActiveCards () {
+  cards.forEach((card) => {
+    card.classList.remove("active")
+    this.classList.add("active");
+  })
+}
