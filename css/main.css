@@ -59,7 +59,12 @@ h6 {
 .swiper-button-prev {
   background-color: #bbced3;
   color: var(--secondary-color);
-  padding: 30px;
+  padding: 15px 20px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.8rem !important;
 }
 
 .btn-primary {
@@ -163,7 +168,7 @@ header .logo {
   margin-right: 0.5rem;
 }
 
-@media (min-width: 992px) and (max-width:1400px){
+@media (min-width: 992px) and (max-width: 1400px) {
   .navbar-nav {
     font-size: 1.25rem !important;
   }
@@ -175,10 +180,9 @@ header .logo {
   }
 
   li.nav-item {
-      margin-right: 8px;
+    margin-right: 8px;
   }
 }
-
 
 .dropdown-menu {
   background-color: var(--primary-color);
@@ -198,7 +202,7 @@ header .logo {
 
 .dropdown-toggle::after {
   margin-left: 0 !important;
-} 
+}
 
 .fa-search {
   font-size: 1.2rem;
@@ -206,6 +210,16 @@ header .logo {
 }
 /* End Navbar */
 /* Start Slider Section */
+#slider .swiper-slide img {
+  width: 100%;
+  height: 560px;
+}
+
+@media (min-width:991px) {
+  #slider .swiper-wrapper .swiper-slide img {
+    height: 1080px;
+  }
+}
 
 #slider .slider-caption {
   width: fit-content;
@@ -270,7 +284,6 @@ header .logo {
     margin-top: 200px;
   }
 }
-
 /* End Slider Section */
 /* Start Products Section */
 #products .mySwiper .swiper-card {
@@ -506,7 +519,6 @@ header .logo {
     color: rgb(167, 46, 55);
   }
 }
-
 /* End Testimonials Section */
 /* Start Contact Us Section */
 #contact-us .contact-head {

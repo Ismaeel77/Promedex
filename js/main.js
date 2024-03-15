@@ -1,16 +1,13 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
-  loop: true,
   grabCursor: true,
-  centerSlide: true,
   fade: true,
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
   mousewheel: true,
-  keyboard: true,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -30,16 +27,13 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".news-slider", {
   slidesPerView: 3,
   spaceBetween: 10,
-  loop: false,
   grabCursor: true,
-  centerSlide: true,
   fade: true,
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
   mousewheel: true,
-  keyboard: true,
   breakpoints: {
     0: {
       slidesPerView: 1,
