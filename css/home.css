@@ -30,12 +30,12 @@
 }
 #products .mySwiper .swiper-card::after {
   content: attr(data-text);
-  top: 80px;
+  top: 140px;
   color: white;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   font-weight: 600;
   text-align: start;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 #products .mySwiper .swiper-card:hover::before,
