@@ -104,3 +104,13 @@ function handleActiveCards () {
     this.classList.add("active");
   })
 }
+
+let docTitle = document.querySelector("title")
+let navLinks = document.querySelectorAll(".navbar .navbar-nav .nav-item .nav-link")
+navLinks.forEach((nav) => {
+  if(nav.classList.contains("active") === true){
+    docTitle.textContent = `${docTitle.textContent} | ${nav.textContent}`
+  } else {
+    docTitle.textContent = docTitle.textContent;
+  }
+})

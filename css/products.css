@@ -1,0 +1,93 @@
+@import url("./global.css");
+#slider .contact-us {
+  background-color: #a72e37ab;
+}
+#contact-us {
+  background-color: var(--bg-color);
+}
+#contact-us h4 {
+  color: var(--heading-color);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+#contact-us input,
+#contact-us textarea {
+  border: none;
+  border-bottom: 2px solid var(--heading-color) !important;
+  background-color: var(--bg-color);
+}
+#contact-us input::placeholder,
+#contact-us textarea::placeholder {
+  color: #8d8585;
+  font-size: 1.2rem;
+}
+#contact-us textarea {
+  width: 100%;
+  height: 140px;
+  resize: none;
+  outline: none;
+}
+#contact-us input[type="submit"] {
+  background-color: var(--heading-color);
+  font-size: 1.2rem;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+#products .mySwiper .product-card img {
+  position: relative;
+}
+#products .mySwiper .product-card span {
+  width: 100%;
+  background-color: #fff;
+  color: var(--heading-color);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 3px 8px #8d8585;
+  padding-left: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#products .mySwiper .product-card::before,
+#products .mySwiper .product-card::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  z-index: 999;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#products .mySwiper .product-card::before {
+  content: "";
+  background-color: #a72e37b5;
+  top: 0;
+}
+#products .mySwiper .product-card::after {
+  content: attr(data-text);
+  top: 0;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: start;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: end;
+}
+#products .mySwiper .swiper-card:hover::before,
+#products .mySwiper .swiper-card:hover::after {
+  opacity: 1;
+}
+#products .mySwiper .swiper-card:hover span {
+  display: none;
+}
