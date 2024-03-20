@@ -9,6 +9,12 @@
   background-position: center;
   height: 70vh;
 }
+@media (max-width: 767px) {
+  #panner .panner-text .text h1 {
+    font-size: 2.825rem;
+    margin-bottom: 0 !important;
+  }
+}
 #panner .panner-ribbon {
   background-color: #a72e37b5 !important;
 }
