@@ -25,9 +25,78 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.panner-text {
+  width: fit-content;
+  z-index: 999;
+  bottom: 0;
+  left: 8%;
+  height: 100%;
+  background-color: #6094e4bf;
+}
+.panner-text .text {
+  top: 50%;
+}
+.panner-text .text h1 {
+  font-size: 5.3rem;
+  margin-top: -20px;
+}
+.panner-text .text p,
+.panner-text .text h1 {
+  text-shadow: 5px 5px 10px #000;
+}
+.panner-ribbon {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #6094e4bf;
+}
+.panner-ribbon p {
+  font-size: 1.5rem;
+}
+@media (max-width: 767px) {
+  .panner-text {
+    width: fit-content;
+    z-index: 999;
+  }
+  .panner-text .text {
+    top: 30%;
+  }
+  .panner-text .text h1 {
+    font-size: 1.825rem;
+    margin-top: -10px;
+    margin-bottom: 15px !important;
+  }
+  .panner-text .text p {
+    font-size: 1.225rem !important;
+  }
+  .panner-ribbon p {
+    margin-bottom: 15px;
+    font-size: 1.2rem !important;
+  }
+  .panner-ribbon p,
+  .panner-ribbon a {
+    width: 100% !important;
+  }
+}
 .main-heading {
   font-size: 2rem;
   margin-bottom: 0;
+}
+.main-btn {
+  background-color: var(--secondary-color);
+  border: var(--secondary-color);
+  color: #fff;
+  text-transform: capitalize;
+}
+.main-btn:hover {
+  background-color: #8b222a;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .main-btn {
+    font-size: 1rem !important;
+  }
 }
 .sub-heading {
   font-size: 1.5rem;
@@ -38,6 +107,9 @@ body {
   width: 100%;
   height: 3px;
   background-color: var(--secondary-color);
+}
+.w-fit-content {
+  width: fit-content;
 }
 .about-investor {
   cursor: pointer !important;
@@ -58,18 +130,6 @@ h6 {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.8rem !important;
-}
-.btn-primary {
-  background-color: var(--secondary-color);
-  border: var(--secondary-color);
-}
-.btn-primary:hover {
-  background-color: #8b222a;
-}
-@media (max-width: 767px) {
-  .btn-primary {
-    font-size: 1rem !important;
-  }
 }
 .form-control {
   border-color: var(--primary-color) !important;
@@ -176,65 +236,11 @@ header .logo {
 /* Start Slider Section */
 #slider .swiper-slide img {
   width: 100%;
-  height: 560px;
+  height: 460px;
 }
 @media (min-width: 768px) {
   #slider .swiper-wrapper .swiper-slide img {
     height: 1080px;
-  }
-}
-#slider .slider-text {
-  width: fit-content;
-  z-index: 999;
-  bottom: 0;
-  left: 8%;
-  height: 100%;
-  background-color: #6094e4bf;
-}
-#slider .slider-text .text {
-  top: 50%;
-}
-#slider .slider-text .text h1 {
-  font-size: 5.3rem;
-  margin-top: -20px;
-}
-#slider .slider-text .text p,
-#slider .slider-text .text h1 {
-  text-shadow: 5px 5px 10px #000;
-}
-#slider .contact-us {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: #6094e4bf;
-}
-#slider .contact-us p {
-  font-size: 1.5rem;
-}
-@media (max-width: 767px) {
-  #slider .slider-text {
-    width: fit-content;
-    z-index: 999;
-  }
-  #slider .slider-text .text {
-    top: 30%;
-  }
-  #slider .slider-text .text h1 {
-    font-size: 2.225rem;
-    margin-top: -10px;
-    margin-bottom: 15px !important;
-  }
-  #slider .slider-text .text p {
-    font-size: 0.725rem;
-  }
-  #slider .contact-us p {
-    margin-bottom: 15px;
-    font-size: 1.2rem !important;
-  }
-  #slider .contact-us p,
-  #slider .contact-us a {
-    width: 100% !important;
   }
 }
 @media (min-width: 768) {

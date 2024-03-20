@@ -1,6 +1,21 @@
 @import url("./global.css");
-#slider .contact-us {
-  background-color: #a72e37ab;
+#panner {
+  margin-bottom: 4.5rem;
+}
+#panner .panner-container {
+  background-image: url("../assets/product-slider-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+}
+#panner .panner-ribbon {
+  background-color: #a72e37b5 !important;
+}
+@media (max-width: 767px) {
+  #panner .panner-container {
+    height: 40vh;
+  }
 }
 #contact-us {
   background-color: var(--bg-color);
