@@ -219,18 +219,18 @@
 }
 /* End Testimonials Section */
 /* Start Contact Us Section */
-#contact-us .contact-head {
+#contact-us-1 .contact-head {
   font-size: 4.5rem;
   color: var(--primary-color);
 }
-#contact-us .contact-head span {
+#contact-us-1 .contact-head span {
   color: var(--secondary-color);
 }
-#contact-us textarea {
+#contact-us-1 textarea {
   resize: none;
   height: 250px;
 }
-#contact-us input[type="submit"] {
+#contact-us-1 input[type="submit"] {
   background-color: var(--primary-color);
 }
 /* End Contact Us Section */

@@ -3,7 +3,7 @@
   margin-bottom: 4.5rem;
 }
 #panner .product-panner {
-  background-image: url("../assets/product-slider-01.jpg");
+  background-image: url("../assets/product-slider-01.jpg") !important;
 }
 @media (max-width: 767px) {
   #panner .panner-text .text h1 {
