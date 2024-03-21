@@ -2,7 +2,7 @@
 #panner {
   margin-bottom: 4.5rem;
 }
-#panner .panner-container {
+#panner .product-panner {
   background-image: url("../assets/product-slider-01.jpg");
 }
 @media (max-width: 767px) {
