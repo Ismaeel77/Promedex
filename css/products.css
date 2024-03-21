@@ -4,23 +4,11 @@
 }
 #panner .panner-container {
   background-image: url("../assets/product-slider-01.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 70vh;
 }
 @media (max-width: 767px) {
   #panner .panner-text .text h1 {
     font-size: 2.825rem;
     margin-bottom: 0 !important;
-  }
-}
-#panner .panner-ribbon {
-  background-color: #a72e37b5 !important;
-}
-@media (max-width: 767px) {
-  #panner .panner-container {
-    height: 40vh;
   }
 }
 #contact-us {
@@ -30,32 +18,6 @@
   color: var(--heading-color);
   font-size: 1.5rem;
   text-transform: capitalize;
-}
-#contact-us input,
-#contact-us textarea {
-  border: none;
-  border-bottom: 2px solid var(--heading-color) !important;
-  background-color: var(--bg-color);
-}
-#contact-us input::placeholder,
-#contact-us textarea::placeholder {
-  color: #8d8585;
-  font-size: 1.2rem;
-}
-#contact-us textarea {
-  width: 100%;
-  height: 140px;
-  resize: none;
-  outline: none;
-}
-#contact-us input[type="submit"] {
-  background-color: var(--heading-color);
-  font-size: 1.2rem;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
 }
 #products .mySwiper .product-card img {
   position: relative;
@@ -112,3 +74,30 @@
 #products .mySwiper .swiper-card:hover span {
   display: none;
 }
+/* Start Faq Section */
+#faq .faq-container img {
+  width: 100%;
+  max-width: 100%;
+}
+#faq h2 {
+  font-size: 2.5rem !important;
+}
+#faq .questions-container .question p.ques {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--heading-color);
+}
+#faq .questions-container .more-btn {
+  display: block;
+  width: fit-content;
+  background: #fff;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+  border-bottom: 2px solid #000;
+}
+/* End Faq Section */
