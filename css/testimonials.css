@@ -1,0 +1,7 @@
+@import url('./global.css');
+#panner .testimonials-panner {
+  background-image: url("../assets/testimonials-panner.jpg") !important;
+}
+.testimonials{
+  margin: 6.5rem 0;
+}

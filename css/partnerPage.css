@@ -1,0 +1,24 @@
+@import url("./global.css");
+#panner .partnerPage-panner {
+  background-image: url("../assets/partner-page-panner") !important;
+}
+#panner .panner-text .text h2 {
+  font-size: 3.5rem;
+  font-style: italic;
+  letter-spacing: 4px;
+}
+#panner .panner-text .text span {
+  font-size: 2rem;
+}
+.card {
+  border: 5px solid #ddd;
+}
+.card img {
+  border-bottom: 5px solid var(--heading-color);
+}
+.card .card-title {
+  color: var(--heading-color);
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+}

@@ -1,0 +1,26 @@
+@import url("./global.css");
+#panner .partners-panner {
+  background-image: url("../assets/partners-panner.jpg") !important;
+}
+@media (max-width: 767px) {
+  .vertical-slider-container {
+    height: 650px;
+  }
+}
+button[type="submit"] {
+  display: block;
+  margin: 0 auto 45px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.partner-card {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid var(--heading-color) !important;
+  padding: 1.5rem 0 !important;
+}
+@media (max-width: 991px) {
+  .partner-card {
+    gap: 1rem;
+  }
+}

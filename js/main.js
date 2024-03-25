@@ -56,20 +56,6 @@ var sliderSwiper = new Swiper(".Slider", {
   },
 });
 
-var partnerSwiper = new Swiper(".partners-slider", {
-  direction: "vertical",
-  slidesPerView: 1,
-  spaceBetween: 30,
-  grabCursor: true,
-  mousewheel: true,
-  fade: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-});
-
 // Control About/Investors Section
 let tabToggler = document.querySelectorAll("#about-us .about-investor");
 
@@ -119,9 +105,7 @@ function handleActiveCards() {
 }
 
 let docTitle = document.querySelector("title");
-let navLinks = document.querySelectorAll(
-  ".navbar .navbar-nav .nav-item .nav-link"
-);
+let navLinks = document.querySelectorAll(".navbar .navbar-nav .nav-item .nav-link");
 navLinks.forEach((nav) => {
   if (nav.classList.contains("active") === true) {
     docTitle.textContent = `${docTitle.textContent} | ${nav.textContent}`;
@@ -130,36 +114,103 @@ navLinks.forEach((nav) => {
   }
 });
 
-// Show More Questions
-const moreBtn = document.querySelector("#faq .questions-container .more-btn");
-const questionsSection = document.querySelector("#faq .questions-container");
+// Vertical Slider Rules
+// Get Slider Items
+var sliderCards = Array.from(
+  document.querySelectorAll(".vertical-slider-container .vertical-slider-card")
+);
 
-moreBtn.addEventListener("click", () => {
-  // Create Question Container Div
-  let queDiv = document.createElement("div");
-  queDiv.setAttribute("class", "question mb-5");
-  // Create Question P
-  let quesP = document.createElement("p");
-  quesP.setAttribute("class", "ques");
-  // Create Question Number Span
-  let quesSpan = document.createElement("span");
-  quesSpan.setAttribute("class", "ques-num");
-  quesP.appendChild(quesSpan);
-  quesP.textContent = "what's your favourite product and why?";
-  // Create Answer Span
-  let spanAnswer = document.createElement("span");
-  spanAnswer.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nisi harum illum animi quaerat dicta sequi, sint laborum dolornisi harum illum animi quaerat dicta sequi.";
-  queDiv.appendChild(quesP);
-  queDiv.appendChild(spanAnswer);
-  questionsSection.removeChild(moreBtn);
-  questionsSection.appendChild(queDiv)
-  questionsSection.appendChild(moreBtn);
-});
+// Get Number Of Slides
+var slidesCount = sliderCards.length;
 
-// FAQ Section Numbering Questions
-let questions = document.querySelectorAll("#faq .question");
-for (let i = 0; i < questions.length; i++) {
-  let quesNum = document.querySelectorAll("span.ques-num");
-  quesNum[i].textContent = `Q${i}: `;
+// Set Curret Slide
+var currentSlide = 1;
+
+// Previous And Next Buttons
+var nextBtn = document.getElementById("next");
+var prevBtn = document.getElementById("prev");
+
+// Handle Click On Next And Previous Buttons
+nextBtn.onclick = nextSlide;
+prevBtn.onclick = prevSlide;
+
+// Create Main Ul Element
+var paginationEle = document.createElement("ul");
+
+// Set Id To Ul
+paginationEle.setAttribute("id", "pagination-ul");
+
+// Create Li Depend On Slide Numbers
+for (var i = 1; i <= slidesCount; i++) {
+  // Create Li Item
+  var paginationItems = document.createElement("li");
+
+  // Set Custom Attribute On Li
+  paginationItems.setAttribute("data-index", i);
+
+  // Append Li Items To The Parent
+  paginationEle.appendChild(paginationItems);
+}
+
+// Add UL Element To The Body
+document.getElementById("indicators").appendChild(paginationEle);
+
+// Get The Created UL Element
+var pagUL = document.getElementById("pagination-ul");
+
+// Get Pagination Items
+var pagBullets = Array.from(document.querySelectorAll("#pagination-ul li"));
+
+// Loop On pagination Bullets
+for (var i = 0; i < pagBullets.length; i++) {
+  pagBullets[i].onclick = function () {
+    currentSlide = parseInt(this.getAttribute("data-index"));
+    checker();
+  };
+}
+
+// Trigger The Checker Function
+checker();
+
+// Next Function
+function nextSlide() {
+  if (nextBtn.classList.contains("disabled")) {
+    return false;
+  } else {
+    currentSlide++;
+    checker();
+  }
+}
+
+// Previous Function
+function prevSlide() {
+  if (prevBtn.classList.contains("disabled")) {
+    return false;
+  } else {
+    currentSlide--;
+    checker();
+  }
+}
+
+// Create The checker Function
+function checker() {
+  // Remove Active Class
+  removeAllAcitve();
+
+  // Set Active Class On The Current Slide
+  sliderCards[currentSlide - 1].classList.add("active");
+
+  // Set Active Class On Li
+  pagUL.children[currentSlide - 1].classList.add("active");
+}
+
+function removeAllAcitve() {
+  // Loop On Images
+  sliderCards.forEach(function (card) {
+    card.classList.remove("active");
+  });
+  // Loop On Li
+  pagBullets.forEach(function (bullet) {
+    bullet.classList.remove("active");
+  });
 }

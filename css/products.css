@@ -1,7 +1,4 @@
 @import url("./global.css");
-#panner {
-  margin-bottom: 4.5rem;
-}
 #panner .product-panner {
   background-image: url("../assets/product-slider-01.jpg") !important;
 }
@@ -11,69 +8,35 @@
     margin-bottom: 0 !important;
   }
 }
-#contact-us {
-  background-color: var(--bg-color);
-}
-#contact-us h4 {
+#contact-us-2 h4 {
   color: var(--heading-color);
   font-size: 1.5rem;
   text-transform: capitalize;
 }
-#products .mySwiper .product-card img {
-  position: relative;
+/* Start Prodcuts Section */
+.vertical-slider-container {
+  height: 900px;
 }
-#products .mySwiper .product-card span {
-  width: 100%;
-  background-color: #fff;
-  color: var(--heading-color);
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  font-weight: 600;
-  border: 1px solid #e7e7e7;
-  box-shadow: 0px 3px 8px #8d8585;
-  padding-left: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-#products .mySwiper .product-card::before,
-#products .mySwiper .product-card::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  z-index: 999;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-#products .mySwiper .product-card::before {
-  content: "";
-  background-color: #a72e37b5;
-  top: 0;
-}
-#products .mySwiper .product-card::after {
-  content: attr(data-text);
-  top: 0;
-  color: white;
-  font-size: 1.7rem;
-  font-weight: 600;
-  text-align: start;
-  margin-left: 10px;
-  padding-bottom: 10px;
+.product-card {
   display: flex;
-  align-items: end;
+  align-items: flex-start;
+  border-bottom: 2px solid var(--heading-color) !important;
+  padding: 1.5rem 0 !important;
+  gap: 1rem;
 }
-#products .mySwiper .swiper-card:hover::before,
-#products .mySwiper .swiper-card:hover::after {
-  opacity: 1;
+@media (max-width: 767px) {
+  .vertical-slider-container {
+    height: 1450px;
+    text-align: center;
+  }
+  .product-card {
+    display: block;
+  }
+  .product-card img {
+    width: 250px;
+  }
 }
-#products .mySwiper .swiper-card:hover span {
-  display: none;
-}
+/* End Prodcuts Section */
 /* Start Faq Section */
 #faq .faq-container img {
   width: 100%;
