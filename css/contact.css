@@ -1,0 +1,14 @@
+@import url("./global.css");
+#panner .contact-panner {
+  background-image: url("../assets/testimonials-panner.jpg");
+}
+#contact-us-2 {
+  background-color: var(--bg-color);
+  margin: 3.5rem 0 10.5rem;
+}
+.form-container {
+  background-color: none;
+}
+.form-container textarea {
+  height: 180px !important;
+}

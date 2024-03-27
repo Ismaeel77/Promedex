@@ -1,0 +1,90 @@
+@import url("./global.css");
+#panner .employee-panner {
+  background-image: url("../assets/employee-panner.jpg");
+}
+.accordion-item {
+  color: #000 !important;
+  background-color: var(--bg-color) !important;
+  border: none !important;
+}
+.accordion-button {
+  color: #fff !important;
+  background-color: #63aed1 !important;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.accordion-button::after {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  content: "+";
+  background-image: none;
+  width: 50px;
+  height: 50px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.accordion-button:not(.collapsed)::after {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  background-image: none;
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.accordion-body p {
+  height: 115px;
+  overflow-y: scroll;
+  padding-right: 30px;
+}
+.accordion-body p::-webkit-scrollbar {
+  background-color: #c0c0c0;
+  width: 5px;
+}
+.accordion-body p::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+#contact-us-2 input {
+  border-bottom-color: #63aed1 !important;
+}
+#contact-us-2 input[type="file"] {
+  border-bottom: none !important;
+}
+input[type="file"]::file-selector-button {
+  display: none;
+}
+input[type="file"]::placeholder {
+  vertical-align: middle;
+}
+label {
+  display: block;
+  width: 50%;
+  background-color: var(--bg-color);
+  color: #8d8585;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+button.resume-btn {
+  color: #fff;
+  background-color: var(--heading-color);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  button.resume-btn {
+    justify-content: center;
+    margin: 2rem auto;
+  }
+}

@@ -1,0 +1,61 @@
+@import url("./global.css");
+* p {
+  font-size: 1.2rem;
+}
+#panner .investors-panner {
+  background-image: url("../assets/investors-panner.jpg") !important;
+}
+.table {
+  --bs-table-bg: var(--bg-color);
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-color-type: #fff;
+  --bs-table-bg-type: var(--heading-color);
+}
+.table > thead > tr,
+.table > tbody > tr {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#timeline table.table thead > tr > th {
+  background-color: var(--heading-color);
+  color: #fff;
+}
+#timeline table.table tbody > tr:first-of-type > * {
+  background-color: var(--bg-color);
+}
+#timeline table.table tbody > tr:nth-of-type(2) > * {
+  background-color: #fff !important;
+}
+#targeted-investors ol li:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.color-primary {
+  color: var(--heading-color);
+}
+#resources button {
+  color: #fff;
+  background-color: var(--heading-color);
+  padding: 20px 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 25rem;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  #resources button {
+    justify-content: center;
+    margin: 2rem auto;
+  }
+}
+.form-container {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}

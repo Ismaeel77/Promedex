@@ -1,0 +1,10 @@
+@import url("./global.css");
+#panner .culture-panner {
+  background-image: url("../assets/culture-panner.jpg");
+}
+#career-pages .img-holder {
+  text-align: center;
+}
+#career-pages .img-holder img {
+  width: 365px;
+}

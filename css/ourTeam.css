@@ -1,0 +1,7 @@
+@import url("./global.css");
+#panner .team-panner {
+  background-image: url("../assets/team-panner.jpg");
+}
+#career-pages .img-holder {
+  text-align: center;
+}

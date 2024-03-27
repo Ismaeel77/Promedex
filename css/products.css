@@ -17,22 +17,14 @@
 .vertical-slider-container {
   height: 900px;
 }
-.product-card {
-  display: flex;
-  align-items: flex-start;
-  border-bottom: 2px solid var(--heading-color) !important;
-  padding: 1.5rem 0 !important;
-  gap: 1rem;
+.inner-card {
+  border-bottom: 2px solid var(--heading-color);
 }
 @media (max-width: 767px) {
-  .vertical-slider-container {
-    height: 1450px;
-    text-align: center;
-  }
-  .product-card {
+  .inner-card {
     display: block;
   }
-  .product-card img {
+  .inner-card img {
     width: 250px;
   }
 }

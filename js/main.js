@@ -1,3 +1,15 @@
+let docTitle = document.querySelector("title");
+let navLinks = document.querySelectorAll(
+  ".navbar .navbar-nav .nav-item a.nav-link"
+);
+navLinks.forEach((nav) => {
+  if (nav.classList.contains("active") === true) {
+    docTitle.textContent = `${docTitle.textContent} | ${nav.textContent}`;
+  } else {
+    docTitle.textContent = docTitle.textContent;
+  }
+});
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -104,20 +116,52 @@ function handleActiveCards() {
   });
 }
 
-let docTitle = document.querySelector("title");
-let navLinks = document.querySelectorAll(".navbar .navbar-nav .nav-item .nav-link");
-navLinks.forEach((nav) => {
-  if (nav.classList.contains("active") === true) {
-    docTitle.textContent = `${docTitle.textContent} | ${nav.textContent}`;
-  } else {
-    docTitle.textContent = docTitle.textContent;
-  }
+// Vertical Slider Rules
+const slider = document.querySelector(".vertical-slider-container");
+const cardsWrapper = document.querySelector(
+  ".vertical-slider-container .vertical-slider-card"
+);
+
+let isPressed = false;
+
+let cursorY;
+
+slider.addEventListener("mousedown", (e) => {
+  isPressed = true;
+  cursorY = e.offsetY - cardsWrapper.offsetTop;
+  slider.style.cursor = "grabbing";
 });
 
-// Vertical Slider Rules
+slider.addEventListener("mouseup", () => {
+  slider.style.cursor = "grab";
+});
+
+window.addEventListener("mouseup", () => {
+  isPressed = false;
+});
+
+slider.addEventListener("mousemove", (e) => {
+  if (!isPressed) return;
+  e.preventDefault();
+  cardsWrapper.style.top = `${e.offsetY - cursorY}px`;
+  boundSlides();
+});
+
+function boundSlides() {
+  const containerRect = slider.getBoundingClientRect();
+  const cardsRect = cardsWrapper.getBoundingClientRect();
+  if (parseInt(cardsWrapper.style.top) > 0) {
+    cardsWrapper.style.top = "0";
+  } else if (cardsRect.bottom < containerRect.bottom) {
+    cardsWrapper.style.top = `-${cardsRect.width - containerRect.width}px`;
+  }
+}
+
 // Get Slider Items
 var sliderCards = Array.from(
-  document.querySelectorAll(".vertical-slider-container .vertical-slider-card")
+  document.querySelectorAll(
+    ".vertical-slider-container .vertical-slider-card .inner-card"
+  )
 );
 
 // Get Number Of Slides
@@ -134,7 +178,7 @@ var prevBtn = document.getElementById("prev");
 nextBtn.onclick = nextSlide;
 prevBtn.onclick = prevSlide;
 
-// Create Main Ul Element
+// // Create Main Ul Element
 var paginationEle = document.createElement("ul");
 
 // Set Id To Ul
@@ -172,7 +216,7 @@ for (var i = 0; i < pagBullets.length; i++) {
 // Trigger The Checker Function
 checker();
 
-// Next Function
+// // Next Function
 function nextSlide() {
   if (nextBtn.classList.contains("disabled")) {
     return false;
@@ -182,7 +226,7 @@ function nextSlide() {
   }
 }
 
-// Previous Function
+// // Previous Function
 function prevSlide() {
   if (prevBtn.classList.contains("disabled")) {
     return false;

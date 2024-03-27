@@ -199,6 +199,10 @@ h6 {
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
+.gmap_canvas {
+  max-width: 100%;
+  margin: 0 auto;
+}
 /* Global Rules */
 /* Start Navbar */
 header .header-top-info {
@@ -314,39 +318,32 @@ header .logo {
   width: 100%;
   height: 550px;
   position: relative;
+  cursor: grab;
   overflow: hidden;
 }
 .vertical-slider-container .vertical-slider-card {
-  width: 700px;
-  top: 0;
   position: absolute;
-  z-index: 1;
-  transition: 0.6s;
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -o-transition: 0.6s;
-  transform: translateY(200%);
-  -webkit-transform: translateY(200%);
-  -moz-transform: translateY(200%);
-  -ms-transform: translateY(200%);
-  -o-transform: translateY(200%);
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 600px);
+  pointer-events: none;
 }
-.vertical-slider-container .vertical-slider-card.active {
-  transform: translateY(0);
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -o-transform: translateY(0);
+.vertical-slider-container .inner-card {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 !important;
+  overflow: hidden;
+  gap: 1rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .vertical-slider-container .vertical-slider-card {
-    width: 450px !important;
+    grid-template-columns: repeat(1, 90%);
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 1200px) {
   .vertical-slider-container .vertical-slider-card {
-    width: 650px;
+    grid-template-columns: repeat(1, 700px);
   }
 }
 .vertical-slider-container .slider-controls {
