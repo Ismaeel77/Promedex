@@ -45,7 +45,7 @@ body {
   left: 8%;
   height: 100%;
   background-color: #6094e4bf;
-  width: 30%;
+  width: fit-content;
 }
 .panner-text .text {
   top: 50%;
@@ -118,7 +118,7 @@ body {
   margin-bottom: 0;
   color: var(--secondary-color);
 }
-.bg-light-gray{
+.bg-light-gray {
   background-color: var(--bg-color);
 }
 .divider {
