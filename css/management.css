@@ -1,0 +1,9 @@
+@import url("./global.css");
+#panner .management-panner {
+  background-image: url("../assets/management-panner.jpg");
+}
+.img-caption p {
+  color: var(--secondary-color);
+  font-size: 2rem !important;
+  text-transform: capitalize;
+}

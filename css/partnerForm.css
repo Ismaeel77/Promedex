@@ -1,0 +1,8 @@
+@import url("./global.css");
+#panner .partnerForm-panner {
+  background-image: url("../assets/partners-panner.jpg");
+}
+h2{
+  font-size: 3.5rem !important;
+  text-align: center !important;
+}

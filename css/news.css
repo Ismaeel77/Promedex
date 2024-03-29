@@ -5,13 +5,13 @@
 #latest-news h2 {
   font-size: 2.5rem;
 }
-.news-card .img-caption {
+.main-card .img-caption {
   padding: 15px;
 }
-.news-card .img-title {
+.main-card .img-title {
   font-size: 1.5rem;
 }
-.news-card .date {
+.main-card .date {
   font-size: 1.2rem;
   color: var(--heading-color);
   font-weight: bold;

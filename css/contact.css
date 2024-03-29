@@ -2,7 +2,7 @@
 #panner .contact-panner {
   background-image: url("../assets/testimonials-panner.jpg");
 }
-#contact-us-2 {
+.contact-us-2 {
   background-color: var(--bg-color);
   margin: 3.5rem 0 10.5rem;
 }

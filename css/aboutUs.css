@@ -1,0 +1,27 @@
+@import url("./global.css");
+#panner .about-panner {
+  background-image: url("../assets/about-panner.jpg");
+}
+h2 {
+  font-size: 3.5rem !important;
+}
+p {
+  font-size: 1.2rem;
+}
+.bg-light-gray {
+  background-color: var(--bg-color);
+}
+section {
+  margin: 3.5rem 0;
+}
+#company-profile a {
+  position: absolute;
+  right: 150px;
+  top: 50%;
+  font-size: 2rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
