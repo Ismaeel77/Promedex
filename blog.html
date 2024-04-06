@@ -17,6 +17,13 @@
     <title>Promedex</title>
   </head>
   <body>
+    <div class="search-bar-overlay">
+      <div class="search-bar position-absolute">
+        <input type="search" placeholder="SEARCH" />
+        <input class="btn main-btn my-3 mx-auto d-block fs-5 py-1 px-3" type="submit" value="SUBMIT"/>
+        <i class="fa-solid fa-close close-btn"></i>
+      </div>
+    </div>
     <header>
       <div class="header-top-info">
         <div class="container d-flex justify-content-between align-items-center">
@@ -122,7 +129,7 @@
                 </ul>
               </li>
             </ul>
-            <i class="fa-solid fa-search fs-5 ms-md-2"></i>
+            <i id="search-icon" class="fa-solid fa-search fs-5 ms-md-2"></i>
           </div>
         </div>
       </nav>
@@ -142,7 +149,6 @@
 
       <section id="latest-news" class="py-5 my-5">
         <div class="container">
-          <h2 class="main-heading mb-5">latest news</h2>
           <div class="row">
             <div class="col-12 col-md-4">
               <div class="main-card mb-3 mb-md-0">
@@ -181,7 +187,7 @@
               </div>
             </div>
           </div>
-          <div class="row my-5">
+          <div class="row my-3">
             <div class="col-12 col-md-4">
               <div class="main-card mb-3 mb-md-0">
                 <img class="img-fluid" src="./assets/news-01.png" alt="news-01"/>

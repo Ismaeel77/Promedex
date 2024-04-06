@@ -49,8 +49,10 @@
 .accordion-body p::-webkit-scrollbar-thumb {
     background: #888; 
 }
-#contact-us-2 input {
-  border-bottom-color: #63aed1 !important;
+#contact-us-2 input:not(input[type="submit"]) {
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--heading-color) !important;
 }
 #contact-us-2 input[type="file"] {
   border-bottom: none !important;
@@ -87,4 +89,7 @@ button.resume-btn {
     justify-content: center;
     margin: 2rem auto;
   }
+}
+input[type="submit"] {
+  background-color: var(--heading-color);
 }

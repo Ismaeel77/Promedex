@@ -8,7 +8,16 @@
   }
 }
 .inner-card {
-  border-top: 2px solid var(--heading-color);
+  border-top: 2px solid var(--heading-color) !important;
+  border-bottom: none !important;
+  align-items: center !important;
+}
+.inner-card > div {
+  width: 100%;
+  text-align: center;
+}
+.inner-card > div img {
+  max-width: 250px;
 }
 button[type="submit"] {
   display: block;

@@ -1,3 +1,16 @@
+let searchIcon = document.getElementById("search-icon");
+searchIcon.addEventListener("click", () => {
+  let overlay = document.querySelector("div.search-bar-overlay");
+  overlay.style.display = "block";
+
+  let closeBtn = document.querySelector("i.close-btn");
+  // Add Event Click On Span To Close
+
+  closeBtn.onclick = function () {
+    overlay.style.display = "none";
+  };
+});
+
 let docTitle = document.querySelector("title");
 let navLinks = document.querySelectorAll(
   ".navbar .navbar-nav .nav-item a.nav-link"
@@ -94,7 +107,7 @@ let mainTitle = document.querySelector("#news h2.news-headline");
 
 let mainText = document.querySelector("#news .main-text");
 
-let cards = document.querySelectorAll("#news .news-card");
+let cards = document.querySelectorAll("#news .main-card");
 
 cards.forEach((card) => {
   card.addEventListener("click", handleActiveCards);
@@ -153,7 +166,7 @@ function boundSlides() {
   if (parseInt(cardsWrapper.style.top) > 0) {
     cardsWrapper.style.top = "0";
   } else if (cardsRect.bottom < containerRect.bottom) {
-    cardsWrapper.style.top = `-${cardsRect.width - containerRect.width}px`;
+    cardsWrapper.style.top = `-${cardsRect.height - containerRect.height}px`;
   }
 }
 

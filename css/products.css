@@ -14,20 +14,7 @@
   text-transform: capitalize;
 }
 /* Start Prodcuts Section */
-.vertical-slider-container {
-  height: 900px;
-}
-.inner-card {
-  border-bottom: 2px solid var(--heading-color);
-}
-@media (max-width: 767px) {
-  .inner-card {
-    display: block;
-  }
-  .inner-card img {
-    width: 250px;
-  }
-}
+
 /* End Prodcuts Section */
 /* Start Faq Section */
 #faq .faq-container img {
