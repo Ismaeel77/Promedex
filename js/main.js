@@ -1,3 +1,15 @@
+let docTitle = document.querySelector("title");
+let navLinks = document.querySelectorAll(
+  ".navbar .navbar-nav .nav-item a.nav-link"
+);
+navLinks.forEach((nav) => {
+  if (nav.classList.contains("active") === true) {
+    docTitle.textContent = `${docTitle.textContent} | ${nav.textContent}`;
+  } else {
+    docTitle.textContent = docTitle.textContent;
+  }
+});
+
 let searchIcon = document.getElementById("search-icon");
 searchIcon.addEventListener("click", () => {
   let overlay = document.querySelector("div.search-bar-overlay");
@@ -9,18 +21,6 @@ searchIcon.addEventListener("click", () => {
   closeBtn.onclick = function () {
     overlay.style.display = "none";
   };
-});
-
-let docTitle = document.querySelector("title");
-let navLinks = document.querySelectorAll(
-  ".navbar .navbar-nav .nav-item a.nav-link"
-);
-navLinks.forEach((nav) => {
-  if (nav.classList.contains("active") === true) {
-    docTitle.textContent = `${docTitle.textContent} | ${nav.textContent}`;
-  } else {
-    docTitle.textContent = docTitle.textContent;
-  }
 });
 
 var swiper = new Swiper(".mySwiper", {
@@ -126,148 +126,5 @@ function handleActiveCards() {
   cards.forEach((card) => {
     card.classList.remove("active");
     this.classList.add("active");
-  });
-}
-
-// Vertical Slider Rules
-const slider = document.querySelector(".vertical-slider-container");
-const cardsWrapper = document.querySelector(
-  ".vertical-slider-container .vertical-slider-card"
-);
-
-let isPressed = false;
-
-let cursorY;
-
-slider.addEventListener("mousedown", (e) => {
-  isPressed = true;
-  cursorY = e.offsetY - cardsWrapper.offsetTop;
-  slider.style.cursor = "grabbing";
-});
-
-slider.addEventListener("mouseup", () => {
-  slider.style.cursor = "grab";
-});
-
-window.addEventListener("mouseup", () => {
-  isPressed = false;
-});
-
-slider.addEventListener("mousemove", (e) => {
-  if (!isPressed) return;
-  e.preventDefault();
-  cardsWrapper.style.top = `${e.offsetY - cursorY}px`;
-  boundSlides();
-});
-
-function boundSlides() {
-  const containerRect = slider.getBoundingClientRect();
-  const cardsRect = cardsWrapper.getBoundingClientRect();
-  if (parseInt(cardsWrapper.style.top) > 0) {
-    cardsWrapper.style.top = "0";
-  } else if (cardsRect.bottom < containerRect.bottom) {
-    cardsWrapper.style.top = `-${cardsRect.height - containerRect.height}px`;
-  }
-}
-
-// Get Slider Items
-var sliderCards = Array.from(
-  document.querySelectorAll(
-    ".vertical-slider-container .vertical-slider-card .inner-card"
-  )
-);
-
-// Get Number Of Slides
-var slidesCount = sliderCards.length;
-
-// Set Curret Slide
-var currentSlide = 1;
-
-// Previous And Next Buttons
-var nextBtn = document.getElementById("next");
-var prevBtn = document.getElementById("prev");
-
-// Handle Click On Next And Previous Buttons
-nextBtn.onclick = nextSlide;
-prevBtn.onclick = prevSlide;
-
-// // Create Main Ul Element
-var paginationEle = document.createElement("ul");
-
-// Set Id To Ul
-paginationEle.setAttribute("id", "pagination-ul");
-
-// Create Li Depend On Slide Numbers
-for (var i = 1; i <= slidesCount; i++) {
-  // Create Li Item
-  var paginationItems = document.createElement("li");
-
-  // Set Custom Attribute On Li
-  paginationItems.setAttribute("data-index", i);
-
-  // Append Li Items To The Parent
-  paginationEle.appendChild(paginationItems);
-}
-
-// Add UL Element To The Body
-document.getElementById("indicators").appendChild(paginationEle);
-
-// Get The Created UL Element
-var pagUL = document.getElementById("pagination-ul");
-
-// Get Pagination Items
-var pagBullets = Array.from(document.querySelectorAll("#pagination-ul li"));
-
-// Loop On pagination Bullets
-for (var i = 0; i < pagBullets.length; i++) {
-  pagBullets[i].onclick = function () {
-    currentSlide = parseInt(this.getAttribute("data-index"));
-    checker();
-  };
-}
-
-// Trigger The Checker Function
-checker();
-
-// // Next Function
-function nextSlide() {
-  if (nextBtn.classList.contains("disabled")) {
-    return false;
-  } else {
-    currentSlide++;
-    checker();
-  }
-}
-
-// // Previous Function
-function prevSlide() {
-  if (prevBtn.classList.contains("disabled")) {
-    return false;
-  } else {
-    currentSlide--;
-    checker();
-  }
-}
-
-// Create The checker Function
-function checker() {
-  // Remove Active Class
-  removeAllAcitve();
-
-  // Set Active Class On The Current Slide
-  sliderCards[currentSlide - 1].classList.add("active");
-
-  // Set Active Class On Li
-  pagUL.children[currentSlide - 1].classList.add("active");
-}
-
-function removeAllAcitve() {
-  // Loop On Images
-  sliderCards.forEach(function (card) {
-    card.classList.remove("active");
-  });
-  // Loop On Li
-  pagBullets.forEach(function (bullet) {
-    bullet.classList.remove("active");
   });
 }
