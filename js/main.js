@@ -42,13 +42,13 @@ function createPagination(totalPages, page){
   let beforePage = page - 1;
   let afterPage = page + 1;
   if(page > 1){ //show the next button if the page value is greater than 1
-    liTag += `<li class="page-item" onclick="createPagination(totalPages, ${page - 1})"><span class="page-link"><i class="fas fa-angle-left"></i> Prev</span></li>`;
+    liTag += `<li class="page-item" onclick="createPagination(totalPages, ${page - 1})"><a class="page-link" href="#"><i class="fas fa-angle-left"></i> Prev</a></li>`;
   }
 
   if(page > 2){ //if page value is less than 2 then add 1 after the previous button
-    liTag += `<li class="page-item" onclick="createPagination(totalPages, 1)"><span class="page-link">1</span></li>`;
+    liTag += `<li class="page-item" onclick="createPagination(totalPages, 1)"><a class="page-link" href="#">1</a></li>`;
     if(page > 3){ //if page value is greater than 3 then add this (...) after the first li or page
-      liTag += `<li class="page-item"><span class="page-link">...</span></li>`;
+      liTag += `<li class="page-item"><a class="page-link">...</a></li>`;
     }
   }
 
@@ -77,18 +77,18 @@ function createPagination(totalPages, page){
     }else{ //else leave empty to the active variable
       active = "";
     }
-    liTag += `<li class="page-item ${active}" onclick="createPagination(totalPages, ${plength})"><span class="page-link">${plength}</span></li>`;
+    liTag += `<li class="page-item ${active}" onclick="createPagination(totalPages, ${plength})"><a class="page-link" href="#">${plength}</a></li>`;
   }
 
   if(page < totalPages - 1){ //if page value is less than totalPage value by -1 then show the last li or page
     if(page < totalPages - 2){ //if page value is less than totalPage value by -2 then add this (...) before the last li or page
-      liTag += `<li class="page-item"><span class="page-link">...</span></li>`;
+      liTag += `<li class="page-item"><a class="page-link" href="#">...</a></li>`;
     }
-    liTag += `<li class="page-item last" onclick="createPagination(totalPages, ${totalPages})"><span class="page-link">${totalPages}</span></li>`;
+    liTag += `<li class="page-item last" onclick="createPagination(totalPages, ${totalPages})"><a class="page-link" href="#">${totalPages}</a></li>`;
   }
 
   if (page < totalPages) { //show the next button if the page value is less than totalPage(20)
-    liTag += `<li class="page-item" onclick="createPagination(totalPages, ${page + 1})"><span class="page-link">Next <i class="fas fa-angle-right"></i></span></li>`;
+    liTag += `<li class="page-item" onclick="createPagination(totalPages, ${page + 1})"><a class="page-link" href="#">Next <i class="fas fa-angle-right"></i></a></li>`;
   }
   ulPagination.innerHTML = liTag; //add li tag inside ul tag
   return liTag; //reurn the li tag
