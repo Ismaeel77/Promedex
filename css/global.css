@@ -29,18 +29,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 70vh;
-}
-@media (max-width: 767px) {
-  .panner-container {
-    height: 40vh;
-  }
+  height: 55vh;
 }
 .panner-text {
   left: 8%;
   height: 100%;
   background-color: #6095e494;
-  width: fit-content;
+  width: 32rem;
   z-index: 999;
   bottom: 0;
 }
@@ -48,15 +43,15 @@ body {
   top: 50%;
 }
 .panner-text .text h1 {
-  font-size: 5.3rem;
+  font-size: 4.5rem;
   margin-top: -20px;
 }
 .panner-text .text p,
 .panner-text .text h1 {
   text-shadow: 5px 5px 10px #000;
 }
-#slider .panner-ribbon {
-  background-color: #6094e4bf;
+#panner {
+  margin: 0;
 }
 #panner .panner-ribbon {
   background-color: #a72e37b5 !important;
@@ -69,8 +64,12 @@ body {
   font-size: 1.5rem;
 }
 @media (max-width: 767px) {
+  .panner-container {
+    height: 20vh;
+  }
   .panner-text {
     z-index: 999;
+    width: 15rem !important;
   }
   .panner-text .text {
     top: 30%;
@@ -136,16 +135,6 @@ h3,
 h6 {
   font-weight: bold;
   text-transform: capitalize;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: #6094e4bf;
-  color: #fff;
-  padding: 15px 20px;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 1.8rem !important;
 }
 .form-control {
   border-color: var(--primary-color) !important;
@@ -231,6 +220,10 @@ h6 {
   max-width: 100%;
   margin: 0 auto;
 }
+li.page-item,
+span.page-link {
+  cursor: pointer;
+}
 /* Global Rules */
 /* Start Navbar */
 header .header-top-info {
@@ -239,14 +232,10 @@ header .header-top-info {
 header .logo {
   width: 75px;
 }
+header #phone-icon{
+  cursor: pointer;
+}
 @media (min-width: 768px) {
-  header {
-    position: absolute;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
   header .logo {
     width: 100px;
   }
@@ -358,11 +347,6 @@ header .logo {
 }
 /* End Navbar */
 /* Start Slider Section */
-#slider .swiper-slide img.slider-img {
-  width: 100%;
-  height: auto;
-  max-height: 808px;
-}
 @media (min-width: 768) {
   main {
     margin-top: 200px;
