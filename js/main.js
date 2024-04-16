@@ -1,13 +1,13 @@
 function docTitle() {
   let docTitle = document.querySelector("title");
-let navLinks = document.querySelectorAll(".navbar .navbar-nav .nav-item a.nav-link");
-navLinks.forEach((nav) => {
-  if (nav.classList.contains("active") === true) {
-    docTitle.textContent = `${docTitle.textContent} | ${nav.textContent}`;
-  } else {
-    docTitle.textContent = docTitle.textContent;
-  }
-});
+  let navLinks = document.querySelectorAll(".navbar .navbar-nav .nav-item a.nav-link");
+  navLinks.forEach((nav) => {
+    if (nav.classList.contains("active") === true) {
+      docTitle.textContent = `${docTitle.textContent} | ${nav.textContent}`;
+    } else {
+      docTitle.textContent = docTitle.textContent;
+    }
+  });
 }
 
 function searchIcon() {
@@ -148,7 +148,7 @@ function newsHandler() {
   }
 }
 
-function productSwiper() {
+async function productSwiper() {
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -178,7 +178,7 @@ function productSwiper() {
   });
 }
 
-function newsSwiper() {
+async function newsSwiper() {
   var newsSwiper = new Swiper(".news-slider", {
     slidesPerView: 3,
     spaceBetween: 10,
