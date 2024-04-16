@@ -11,6 +11,7 @@
   border-top: 2px solid var(--heading-color) !important;
   border-bottom: none !important;
   align-items: center !important;
+  padding-top: 30px;
 }
 .inner-card > div {
   width: 100%;

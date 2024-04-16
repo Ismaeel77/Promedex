@@ -25,6 +25,8 @@ function searchIcon() {
   });
 }
 
+productSwiper()
+newsSwiper()
 docTitle()
 searchIcon()
 newsHandler()
@@ -144,4 +146,65 @@ function newsHandler() {
       this.classList.add("active");
     });
   }
+}
+
+function productSwiper() {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    grabCursor: true,
+    fade: true,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true,
+    },
+    mousewheel: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween:0,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      767: {
+        slidesPerView: 3,
+      },
+      991: {
+        slidesPerView: 4,
+      },
+    },
+  });
+}
+
+function newsSwiper() {
+  var newsSwiper = new Swiper(".news-slider", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    grabCursor: true,
+    fade: true,
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    mousewheel: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+      },
+    },
+  });
 }

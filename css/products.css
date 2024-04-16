@@ -4,18 +4,17 @@
 }
 @media (max-width: 767px) {
   #panner .panner-text .text h1 {
-    font-size: 2.825rem;
-    margin-bottom: 0 !important;
+    font-size: 2.2rem;
   }
+}
+.inner-card {
+  padding-bottom: 30px;
 }
 #contact-us-2 h4 {
   color: var(--heading-color);
   font-size: 1.5rem;
   text-transform: capitalize;
 }
-/* Start Prodcuts Section */
-
-/* End Prodcuts Section */
 /* Start Faq Section */
 #faq .faq-container img {
   width: 100%;

@@ -29,13 +29,13 @@
     <header>
       <div class="header-top-info">
         <div class="container d-flex justify-content-between align-items-center">
-          <a href="#">
-            <img class="logo img-fluid" src="./assets/logo.png" alt="logo" />
+          <a href="/">
+            <img class="logo img-fluid" src="./assets/logo.png" alt="logo"/>
           </a>
-          <a id="phone-icon" class="fs-5" href="tel:+96611472800">
+          <a id="phone-icon" class="fs-5 text-decoration-none" href="tel:+96611472800">
             <i class="fa-solid fa-phone text-primary"></i>
             +96611472800
-          </>
+          </a>
         </div>
       </div>
       <nav class="navbar navbar-expand-lg">
@@ -157,8 +157,8 @@
       <section id="slider" class="position-relative pb-5 mb-5">
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/slider-05.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item carousel-img bg-1 active">
+              <!-- <img src="./assets/slider-05.jpg" class="d-block w-100" alt="..."> -->
               <div class="panner-text position-absolute text-white text-capitalize">
                 <div class="text position-relative z-3 p-4">
                   <p class="fs-1">lorem ipsum</p>
@@ -169,8 +169,8 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="./assets/slider-06.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item carousel-img bg-2">
+              <!-- <img src="./assets/slider-06.jpg" class="d-block w-100" alt="..."> -->
               <div class="panner-text position-absolute text-white text-capitalize">
                 <div class="text position-relative z-3 p-4">
                   <p class="fs-1">lorem ipsum</p>
@@ -181,8 +181,8 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="./assets/slider-07.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item carousel-img bg-3">
+              <!-- <img src="./assets/slider-07.jpg" class="d-block w-100" alt="..."> -->
               <div class="panner-text position-absolute text-white text-capitalize">
                 <div class="text position-relative z-3 p-4">
                   <p class="fs-1">lorem ipsum</p>
@@ -287,7 +287,7 @@
                 </p>
                 <a class="fs-5 btn main-btn readMore" href="#">read more</a>
               </div>
-              <div class="col-md-6 mt-3 mt-md-0">
+              <div class="col-md-6 mt-5 mt-md-0">
                 <div class="img-container d-flex justify-content-between mb-4 w-100">
                   <div>
                     <img class="img-fluid" src="./assets/about-us-01.png" alt="about-us-01"/>
@@ -659,10 +659,10 @@
                   SAUDI ARABIA
                 </span>
               </p>
-              <p class="d-flex align-items-center gap-2">
+              <a class="d-flex align-items-center gap-2 text-white text-decoration-none mb-2" href="mailto:info@promedex.com">
                 <i class="fa-solid fa-envelope"></i>
                 <span>info@promedex.com</span>
-              </p>
+              </a>
               <p class="d-flex align-items-center gap-2 mb-5">
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <span>
@@ -704,61 +704,5 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <!-- Main JS File -->
     <script src="./js/main.js"></script>
-    <script type="module">
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        grabCursor: true,
-        fade: true,
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-          clickable: true,
-        },
-        mousewheel: true,
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          520: {
-            slidesPerView: 2,
-          },
-          767: {
-            slidesPerView: 3,
-          },
-          991: {
-            slidesPerView: 4,
-          },
-        },
-      });
-      var newsSwiper = new Swiper(".news-slider", {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        grabCursor: true,
-        fade: true,
-        loop:true,
-        pagination: {
-          el: ".swiper-pagination",
-          dynamicBullets: true,
-          clickable: true,
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        mousewheel: true,
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          520: {
-            slidesPerView: 2,
-          },
-          991: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
   </body>
 </html>

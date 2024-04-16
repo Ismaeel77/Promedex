@@ -55,7 +55,6 @@ body {
 }
 #panner .panner-ribbon {
   background-color: #a72e37b5 !important;
-  background-color: #a72e37b5 !important;
   width: 100%;
   bottom: 0px;
   z-index: 8888;
@@ -72,12 +71,12 @@ body {
     width: 15rem !important;
   }
   .panner-text .text {
-    top: 30%;
+    top: 20%;
   }
   .panner-text .text h1 {
     font-size: 1.825rem;
     margin-top: -10px;
-    margin-bottom: 15px !important;
+    margin-bottom:0 !important;
   }
   .panner-text .text p {
     font-size: 1.225rem !important;
@@ -90,6 +89,19 @@ body {
   .panner-ribbon a {
     width: 100% !important;
   }
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}
+.swiper-pagination span.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+}
+.swiper-pagination span.swiper-pagination-bullet-active {
+  background-color: var(--secondary-color) !important;
+  border: 2px solid var(--secondary-color);
 }
 .main-heading {
   font-size: 2rem;
@@ -150,24 +162,14 @@ h6 {
 .form-control::placeholder {
   color: #c5c5c5;
 }
-.swiper-pagination {
-  bottom: 0 !important;
-}
-.swiper-pagination span.swiper-pagination-bullet {
-  width: 20px !important;
-  height: 20px !important;
-  background-color: #fff;
-  border: 2px solid var(--primary-color);
-}
-.swiper-pagination span.swiper-pagination-bullet-active {
-  background-color: var(--secondary-color) !important;
-  border: 2px solid var(--secondary-color);
-}
 .contact-us-2 input,
 .contact-us-2 textarea {
   border: none;
   border-bottom: 2px solid var(--heading-color) !important;
   background-color: var(--bg-color);
+}
+.contact-us-2 input:focus {
+  background-color:var(--bg-color) ;
 }
 .contact-us-2 h4 {
   color: var(--heading-color);
@@ -355,7 +357,7 @@ header #phone-icon{
 /* End Slider Section */
 /* Start Vertical Slider */
 .splide__slide {
-  padding-inline-end: 40px;
+  padding-inline-end: 30px;
 }
 .splide__arrows--ttb .splide__arrow {
   display: none !important;
@@ -376,7 +378,7 @@ header #phone-icon{
 .inner-card {
   border-bottom: 2px solid var(--heading-color);
   display: flex;
-  padding: 15px 20px;
+  align-items: center;
   gap: 20px;
   text-decoration: none;
 }

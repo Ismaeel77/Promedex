@@ -3,6 +3,31 @@
 #slider .panner-ribbon {
   background-color: rgb(96 148 228 / 75%);
 }
+#slider .bg-1 {
+  background-image: url("../assets/slider-01.png");
+}
+#slider .bg-2 {
+  background-image: url("../assets/slider-02.jpg");
+}
+#slider .bg-3 {
+  background-image: url("../assets/slider-03.jpg");
+}
+#slider .carousel-img {
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+}
+.carousel-control-next, .carousel-control-prev {
+  height: fit-content !important;
+  width: fit-content !important;
+  top: 50% !important;
+  background-color: var(--primary-color);
+  margin: 0 25px;
+  padding: 5px;
+  z-index: 999;
+}
 /* End Slider */
 /* Start Products Section */
 #products .mySwiper .swiper-card {
@@ -55,10 +80,19 @@
   background-color: var(--bg-color);
   border-bottom: 2px solid #c0bfbf;
 }
+#about-us .toglle-tabs {
+  position: relative;
+  top: -48px;
+}
 #about-us .readMore{
   position: absolute;
   left: 12px;
-  bottom: 16px;
+  bottom: 10px;
+}
+@media (max-width:991px) {
+  #about-us .readMore{
+    bottom: -25px;
+  }
 }
 #about-us .toglle-tabs h2.active,
 #about-us .toglle-tabs h2:hover {
@@ -116,6 +150,14 @@
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+@media (max-width:767px) {
+  #partners .partner-card {
+    width: 380px !important;
+  }
+  #partners .partner-card:not(:last-child){
+    margin-right: 25px !important;
+  }
 }
 /* End Partners Section */
 #partners .partner-card:not(:last-child),
