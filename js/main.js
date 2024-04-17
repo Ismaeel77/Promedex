@@ -25,8 +25,8 @@ function searchIcon() {
   });
 }
 
-productSwiper()
-newsSwiper()
+await productSwiper()
+await newsSwiper()
 docTitle()
 searchIcon()
 newsHandler()
