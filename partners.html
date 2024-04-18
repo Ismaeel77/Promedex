@@ -162,7 +162,7 @@
                     <li class="splide__slide">
                       <a href="./partnerPage.html" class="inner-card">
                         <div>
-                          <img class="img-fluid" src="./assets/partner-01.png" />
+                          <img class="img-fluid" decoding="async" src="./assets/partner-01.png" alt=""/>
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -176,7 +176,7 @@
                     <li class="splide__slide">
                       <a href="./partnerPage.html" class="inner-card">
                         <div>
-                          <img class="img-fluid" src="./assets/partner-02.png" />
+                          <img class="img-fluid" decoding="async" src="./assets/partner-02.png" alt=""/>
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -190,7 +190,7 @@
                     <li class="splide__slide">
                       <a href="./partnerPage.html" class="inner-card">
                         <div>
-                          <img class="img-fluid" src="./assets/partner-03.png" />
+                          <img class="img-fluid" decoding="async" src="./assets/partner-03.png" alt=""/>
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -204,7 +204,7 @@
                     <li class="splide__slide">
                       <a href="./partnerPage.html" class="inner-card">
                         <div>
-                          <img class="img-fluid" src="./assets/partner-04.png" />
+                          <img class="img-fluid" decoding="async" src="./assets/partner-04.png" alt=""/>
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -218,7 +218,7 @@
                     <li class="splide__slide">
                       <a href="./partnerPage.html" class="inner-card">
                         <div>
-                          <img class="img-fluid" src="./assets/partner-01.png" />
+                          <img class="img-fluid" decoding="async" src="./assets/partner-01.png" alt=""/>
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -232,7 +232,7 @@
                     <li class="splide__slide">
                       <a href="./partnerPage.html" class="inner-card">
                         <div>
-                          <img class="img-fluid" src="./assets/partner-02.png" />
+                          <img class="img-fluid" decoding="async" src="./assets/partner-02.png" alt=""/>
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -246,7 +246,7 @@
                     <li class="splide__slide">
                       <a href="./partnerPage.html" class="inner-card">
                         <div>
-                          <img class="img-fluid" src="./assets/partner-03.png" />
+                          <img class="img-fluid" decoding="async" src="./assets/partner-03.png" alt=""/>
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -260,7 +260,7 @@
                     <li class="splide__slide">
                       <a href="./partnerPage.html" class="inner-card">
                         <div>
-                          <img class="img-fluid" src="./assets/partner-04.png" />
+                          <img class="img-fluid" decoding="async" src="./assets/partner-04.png" alt=""/>
                         </div>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -281,12 +281,18 @@
               </a>
               <div class="contact-us-2 w-100">
                 <div class="form-container">
-                  <input type="text" class="form-control" placeholder="Partner Name" />
-                  <input type="url" class="form-control" placeholder="Web Site"/>
-                  <input type="text" class="form-control" placeholder="Medical Solution/s Available"/>
-                  <input type="text" class="form-control" placeholder="Representative Name"/>
-                  <input type="tel" class="form-control" placeholder="Contact Number"/>
-                  <input type="email" class="form-control" placeholder="Email"/>
+                  <label class="visually-hidden" for="partner-name"></label>
+                  <input id="partner-name" type="text" name="partner-name" class="form-control" placeholder="Partner Name" />
+                  <label class="visually-hidden" for="webSite"></label>
+                  <input id="webSite" type="url" name="webSite" class="form-control" placeholder="WebSite"/>
+                  <label class="visually-hidden" for="medical"></label>
+                  <input id="medical" type="text" name="medical" class="form-control" placeholder="Medical Solution/s Available"/>
+                  <label class="visually-hidden" for="representative-name"></label>
+                  <input id="representative-name" type="text" name="representative-name" class="form-control" placeholder="Representative Name"/>
+                  <label class="visually-hidden" for="contact-number"></label>
+                  <input id="contact-number" type="tel" name="contact-number" class="form-control" placeholder="Contact Number"/>
+                  <label class="visually-hidden" for="email"></label>
+                  <input id="email" type="email" name="email" class="form-control" placeholder="Email"/>
                   <textarea placeholder="Your Message..."></textarea>
                   <input class="btn main-btn w-100 text-uppercase py-2"type="submit"value="Submit"/>
                 </div>
@@ -301,7 +307,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="mb-3">
-                <img src="./assets/footer-logo.png" alt="footer logo" />
+                <img src="./assets/footer-logo.png" decoding="async" alt="footer logo" />
               </div>
               <p class="fs-6">
                 Thank you for your interest in ProMedEx. Our goal is to have the
@@ -315,28 +321,28 @@
               </h4>
               <ul class="list-unstyled text-capitalize fs-4">
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">home</a>
+                  <a class="nav-link" href="./index.html">home</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">about us</a>
+                  <a class="nav-link" href="./aboutUs.html">about us</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">products</a>
+                  <a class="nav-link" href="./products.html">products</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">partners</a>
+                  <a class="nav-link" href="./partners.html">partners</a>
                 </li>
                 <li class="nav-item mb-2">
                   <a class="nav-link" href="#">clients</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">investors</a>
+                  <a class="nav-link" href="./investors.html">investors</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">news</a>
+                  <a class="nav-link" href="./news.html">news</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">contact us</a>
+                  <a class="nav-link" href="./contact.html">contact us</a>
                 </li>
               </ul>
             </div>
@@ -346,28 +352,28 @@
               </h4>
               <ul class="list-unstyled text-capitalize fs-4">
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">spine</a>
+                  <a class="nav-link" href="./productPage.html">spine</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">pediatric orthopedic</a>
+                  <a class="nav-link" href="./productPage.html">pediatric orthopedic</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">general surgery</a>
+                  <a class="nav-link" href="./productPage.html">general surgery</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">infection prevention</a>
+                  <a class="nav-link" href="./productPage.html">infection prevention</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">oncology</a>
+                  <a class="nav-link" href="./productPage.html">oncology</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">gi</a>
+                  <a class="nav-link" href="./productPage.html">gi</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">endoscopy</a>
+                  <a class="nav-link" href="./productPage.html">endoscopy</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">bariatric surgery</a>
+                  <a class="nav-link" href="./productPage.html">bariatric surgery</a>
                 </li>
               </ul>
             </div>
@@ -390,9 +396,9 @@
               </a>
               <p class="d-flex align-items-center gap-2 mb-5">
                 <i class="fa-solid fa-mobile-screen-button"></i>
-                <span>
-                  <span class="d-block">Tel: +966 12 612 4949 </span>
-                  <span class="d-block">Fax:+966 12 612 5050 </span>
+                <span class="d-block">
+                  <a class="d-block text-white text-decoration-none" href="tel:+966 12 612 4949">Tel: +966 12 612 4949 </a>
+                  <a class="d-block text-white text-decoration-none" href="tel:+966 12 612 5050">Fax: +966 12 612 5050 </a>
                 </span>
               </p>
               <ul class="social-icons list-unstyled fs-5">

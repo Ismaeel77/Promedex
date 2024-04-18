@@ -15,18 +15,25 @@ function searchIcon() {
   searchIcon.addEventListener("click", () => {
     let overlay = document.querySelector("div.search-bar-overlay");
     overlay.style.display = "block";
-
     let closeBtn = document.querySelector("i.close-btn");
-    // Add Event Click On Span To Close
+    
+    overlay.onclick = (e) => {
+      if (e.target.getAttribute("class") === "search-bar-overlay") {
+        overlay.style.display = "none";
+      }
+    }
 
-    closeBtn.onclick = function () {
+    // Add Event Click On Span To Close
+    closeBtn.onclick = () => {
       overlay.style.display = "none";
     };
+    
+    
   });
 }
 
-await productSwiper()
-await newsSwiper()
+productSwiper()
+newsSwiper()
 docTitle()
 searchIcon()
 newsHandler()
@@ -148,7 +155,7 @@ function newsHandler() {
   }
 }
 
-async function productSwiper() {
+function productSwiper() {
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -178,7 +185,7 @@ async function productSwiper() {
   });
 }
 
-async function newsSwiper() {
+function newsSwiper() {
   var newsSwiper = new Swiper(".news-slider", {
     slidesPerView: 3,
     spaceBetween: 10,

@@ -154,7 +154,7 @@
               <h2 class="main-heading mb-3">spine</h2>
               <div class="col-md-6 mb-4 mb-md-0">
                 <div class="img-holder">
-                  <img class="img-fluid" src="./assets/02.jpg" alt="main image"/>
+                  <img class="img-fluid" decoding="async" src="./assets/02.jpg" alt=""/>
                 </div>
               </div>
               <div class="col-md-6">
@@ -188,10 +188,10 @@
                 <span class="d-block divider"></span>
                 <div class="product-logo-container d-flex justify-content-evenly mt-5">
                   <div class="product-card p-3">
-                    <img class="img-fluid" src="./assets/partner-03.png" />
+                    <img class="img-fluid" decoding="async" src="./assets/partner-03.png" alt="" />
                   </div>
                   <div class="product-card p-3">
-                    <img class="img-fluid" src="./assets/partner-04.png" />
+                    <img class="img-fluid" decoding="async" src="./assets/partner-04.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -206,19 +206,27 @@
             <div class="w-100">
               <h4>personal information</h4>
               <div>
-                <input type="text" class="form-control" placeholder="Full Name"/>
-                <input type="tel" class="form-control" placeholder="Mobile Number"/>
-                <input type="email" class="form-control" placeholder="Email" />
-                <input type="text" class="form-control" placeholder="Job Title"/>
+                <label class="visually-hidden" for="full-name"></label>
+                <input id="full-name" type="text" name="full-name" class="form-control" placeholder="Full Name"/>
+                <label class="visually-hidden" for="mobile-number"></label>
+                <input id="mobile-number" type="tel" name="mobile-number" class="form-control" placeholder="Mobile Number"/>
+                <label class="visually-hidden" for="email"></label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Email" />
+                <label class="visually-hidden" for="job-title"></label>
+                <input id="job-title" type="text" name="job-title" class="form-control" placeholder="Job Title"/>
               </div>
             </div>
             <div class="w-100">
               <h4>additional information</h4>
               <div>
-                <input type="text" class="form-control" placeholder="Organization Name"/>
-                <input type="tel" class="form-control" placeholder="Medical Field"/>
-                <input type="email" class="form-control"placeholder="Area In Saudi Arabia"/>
-                <input type="text" class="form-control" placeholder="Targeted Medical Solution/s"/>
+                <label class="visually-hidden" for="organization-name"></label>
+                <input id="organization-name" type="text" name="organization-name" class="form-control" placeholder="Organization Name"/>
+                <label class="visually-hidden" for="medical-field"></label>
+                <input id="medical-field" type="tel" name="medical-field" class="form-control" placeholder="Medical Field"/>
+                <label class="visually-hidden" for="location"></label>
+                <input id="location" type="email" name="location" class="form-control"placeholder="Area In Saudi Arabia"/>
+                <label class="visually-hidden" for="targeted"></label>
+                <input id="targeted" type="text" name="targeted" class="form-control" placeholder="Targeted Medical Solution/s"/>
               </div>
             </div>
             <div class="w-100">
@@ -237,35 +245,35 @@
           <div class="mySwiper swiper mt-5">
             <div class="slider-content swiper-wrapper pb-5">
               <a href="./productPage.html" class="swiper-card swiper-slide main-card" data-text="Endoscopy">
-                <img class="swiper-img img-fluid" src="./assets/product-01.png" alt="Endoscopy"/>
+                <img class="swiper-img img-fluid" decoding="async" src="./assets/product-01.png" alt="Endoscopy"/>
                 <span>endoscopy</span>
               </a>
               <a href="./productPage.html" class="swiper-card swiper-slide main-card" data-text="Bariatric Surgery">
-                <img class="swiper-img img-fluid" src="./assets/product-02.png" alt="Bariatric Surgery"/>
+                <img class="swiper-img img-fluid" decoding="async" src="./assets/product-02.png" alt="Bariatric Surgery"/>
                 <span>bariatric surgery</span>
               </a>
               <a href="./productPage.html" class="swiper-card swiper-slide main-card" data-text="Pediatric Orthopedic">
-                <img class="swiper-img img-fluid" src="./assets/product-03.png" alt="Pediatric Orthopedic"/>
+                <img class="swiper-img img-fluid" decoding="async" src="./assets/product-03.png" alt="Pediatric Orthopedic"/>
                 <span>pediatric orthopedic</span>
               </a>
               <a href="./productPage.html" class="swiper-card swiper-slide main-card" data-text="Spine">
-                <img class="swiper-img img-fluid" src="./assets/product-04.png" alt="Spine"/>
+                <img class="swiper-img img-fluid" decoding="async" src="./assets/product-04.png" alt="Spine"/>
                 <span>spine</span>
               </a>
               <a href="./productPage.html" class="swiper-card swiper-slide main-card" data-text="Endoscopy">
-                <img class="swiper-img img-fluid" src="./assets/product-01.png" alt="Endoscopy"/>
+                <img class="swiper-img img-fluid" decoding="async" src="./assets/product-01.png" alt="Endoscopy"/>
                 <span>endoscopy</span>
               </a>
               <a href="./productPage.html" class="swiper-card swiper-slide main-card" data-text="Bariatric Surgery">
-                <img class="swiper-img img-fluid" src="./assets/product-02.png" alt="Bariatric Surgery"/>
+                <img class="swiper-img img-fluid" decoding="async" src="./assets/product-02.png" alt="Bariatric Surgery"/>
                 <span>bariatric surgery</span>
               </a>
               <a href="./productPage.html" class="swiper-card swiper-slide main-card" data-text="Pediatric Orthopedic">
-                <img class="swiper-img img-fluid" src="./assets/product-03.png" alt="Pediatric Orthopedic"/>
+                <img class="swiper-img img-fluid" decoding="async" src="./assets/product-03.png" alt="Pediatric Orthopedic"/>
                 <span>pediatric orthopedic</span>
               </a>
               <a href="./productPage.html" class="swiper-card swiper-slide main-card" data-text="Spine">
-                <img class="swiper-img img-fluid" src="./assets/product-04.png" alt="Spine"/>
+                <img class="swiper-img img-fluid" decoding="async" src="./assets/product-04.png" alt="Spine"/>
                 <span>spine</span>
               </a>
             </div>
@@ -317,7 +325,7 @@
               </button>
             </div>
             <div class="img-holder w-fit-content">
-              <img class="img-fluid" src="./assets/q-mark.jpg" alt="question mark icon"/>
+              <img class="img-fluid" decoding="async" src="./assets/q-mark.jpg" alt="question mark icon"/>
             </div>
           </div>
         </div>
@@ -328,7 +336,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="mb-3">
-                <img src="./assets/footer-logo.png" alt="footer logo" />
+                <img src="./assets/footer-logo.png" decoding="async" alt="footer logo" />
               </div>
               <p class="fs-6">
                 Thank you for your interest in ProMedEx. Our goal is to have the
@@ -342,28 +350,28 @@
               </h4>
               <ul class="list-unstyled text-capitalize fs-4">
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">home</a>
+                  <a class="nav-link" href="./index.html">home</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">about us</a>
+                  <a class="nav-link" href="./aboutUs.html">about us</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">products</a>
+                  <a class="nav-link" href="./products.html">products</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">partners</a>
+                  <a class="nav-link" href="./partners.html">partners</a>
                 </li>
                 <li class="nav-item mb-2">
                   <a class="nav-link" href="#">clients</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">investors</a>
+                  <a class="nav-link" href="./investors.html">investors</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">news</a>
+                  <a class="nav-link" href="./news.html">news</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">contact us</a>
+                  <a class="nav-link" href="./contact.html">contact us</a>
                 </li>
               </ul>
             </div>
@@ -373,28 +381,28 @@
               </h4>
               <ul class="list-unstyled text-capitalize fs-4">
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">spine</a>
+                  <a class="nav-link" href="./productPage.html">spine</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">pediatric orthopedic</a>
+                  <a class="nav-link" href="./productPage.html">pediatric orthopedic</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">general surgery</a>
+                  <a class="nav-link" href="./productPage.html">general surgery</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">infection prevention</a>
+                  <a class="nav-link" href="./productPage.html">infection prevention</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">oncology</a>
+                  <a class="nav-link" href="./productPage.html">oncology</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">gi</a>
+                  <a class="nav-link" href="./productPage.html">gi</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">endoscopy</a>
+                  <a class="nav-link" href="./productPage.html">endoscopy</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">bariatric surgery</a>
+                  <a class="nav-link" href="./productPage.html">bariatric surgery</a>
                 </li>
               </ul>
             </div>
@@ -417,9 +425,9 @@
               </a>
               <p class="d-flex align-items-center gap-2 mb-5">
                 <i class="fa-solid fa-mobile-screen-button"></i>
-                <span>
-                  <span class="d-block">Tel: +966 12 612 4949 </span>
-                  <span class="d-block">Fax:+966 12 612 5050 </span>
+                <span class="d-block">
+                  <a class="d-block text-white text-decoration-none" href="tel:+966 12 612 4949">Tel: +966 12 612 4949 </a>
+                  <a class="d-block text-white text-decoration-none" href="tel:+966 12 612 5050">Fax: +966 12 612 5050 </a>
                 </span>
               </p>
               <ul class="social-icons list-unstyled fs-5">

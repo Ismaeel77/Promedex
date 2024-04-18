@@ -25,6 +25,12 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+h2,
+h3,
+h6 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
 .panner-container {
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,6 +67,7 @@ body {
 }
 .panner-ribbon p {
   font-size: 1.5rem;
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .panner-container {
@@ -142,12 +149,6 @@ body {
 .about-investor {
   cursor: pointer !important;
 }
-h2,
-h3,
-h6 {
-  font-weight: bold;
-  text-transform: capitalize;
-}
 .form-control {
   border-color: var(--primary-color) !important;
   border-radius: 0 !important;
@@ -186,6 +187,7 @@ h6 {
   resize: none;
   outline: none;
   padding-left: 10px;
+  padding-top: 10px;
 }
 .contact-us-2 input[type="submit"] {
   background-color: var(--heading-color);
@@ -195,6 +197,15 @@ h6 {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.contact-us-2 input[type="submit"]:hover {
+  background-color: #17539b;
+  color: #fff;
 }
 .form-container {
   background-color: var(--bg-color);
@@ -252,6 +263,9 @@ header #phone-icon{
   background-color: #e6ebf3;
   padding: 10px;
   box-shadow: 0px 0px 5px #bdc0c5;
+}
+.nav-link {
+  width: fit-content !important;
 }
 .navbar .nav-item:hover .dropdown-menu {
   display: block;
