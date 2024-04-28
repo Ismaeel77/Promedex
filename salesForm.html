@@ -17,13 +17,6 @@
     <title>Promedex</title>
   </head>
   <body>
-    <div class="search-bar-overlay">
-      <div class="search-bar position-absolute">
-        <input type="search" placeholder="SEARCH" />
-        <input class="btn main-btn my-3 mx-auto d-block fs-5 py-1 px-3" type="submit" value="SUBMIT"/>
-        <i class="fa-solid fa-close close-btn"></i>
-      </div>
-    </div>
     <header>
       <div class="header-top-info">
         <div class="container d-flex justify-content-between align-items-center">
@@ -90,7 +83,7 @@
                 <a class="nav-link" href="#">Patient</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button">
+                <a class="nav-link dropdown-toggle" href="./clients.html" role="button">
                   Clients
                 </a>
                 <ul class="dropdown-menu">
@@ -131,7 +124,21 @@
                 </ul>
               </li>
             </ul>
-            <i id="search-icon" class="fa-solid fa-search fs-5 ms-md-2"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#searchBar">
+              <i id="search-icon" class="fa-solid fa-search fs-5"></i>
+            </button>
+            <div class="modal fade" id="searchBar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <input type="search" placeholder="SEARCH" />
+                  </div>
+                  <div class="modal-body">
+                    <input class="btn main-btn my-3 mx-auto d-block fs-5 py-1 px-3" type="submit" value="SUBMIT"/>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -206,10 +213,10 @@
               </p>
             </div>
             <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
-              <h4 class="footer-head fw-light text-uppercase fs-3 pb-2">
+              <h4 class="footer-head fw-light text-uppercase fs-5 pb-2">
                 quick links
               </h4>
-              <ul class="list-unstyled text-capitalize fs-4">
+              <ul class="list-unstyled text-capitalize fs-6">
                 <li class="nav-item mb-2">
                   <a class="nav-link" href="./index.html">home</a>
                 </li>
@@ -223,7 +230,7 @@
                   <a class="nav-link" href="./partners.html">partners</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a class="nav-link" href="#">clients</a>
+                  <a class="nav-link" href="./clients.html">clients</a>
                 </li>
                 <li class="nav-item mb-2">
                   <a class="nav-link" href="./investors.html">investors</a>
@@ -237,10 +244,10 @@
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
-              <h4 class="footer-head fw-light text-uppercase fs-3 pb-2">
+              <h4 class="footer-head fw-light text-uppercase fs-5 pb-2">
                 our services
               </h4>
-              <ul class="list-unstyled text-capitalize fs-4">
+              <ul class="list-unstyled text-capitalize fs-6">
                 <li class="nav-item mb-2">
                   <a class="nav-link" href="./productPage.html">spine</a>
                 </li>
@@ -268,10 +275,10 @@
               </ul>
             </div>
             <div class="col-sm-6 col-md-3">
-              <h4 class="footer-head fw-light text-uppercase fs-3 pb-2">
+              <h4 class="footer-head fw-light text-uppercase fs-5 pb-2">
                 get in touch
               </h4>
-              <p class="d-flex gap-2">
+              <p class="d-flex gap-2 fs-6">
                 <i class="fa-solid fa-house-chimney"></i>
                 <span>
                   Professional Medical Expertise Company ProMedEx (Head Office),
@@ -280,18 +287,18 @@
                   SAUDI ARABIA
                 </span>
               </p>
-              <a class="d-flex align-items-center gap-2 text-white text-decoration-none mb-2" href="mailto:info@promedex.com">
+              <a class="d-flex align-items-center gap-2 text-white text-decoration-none mb-2 fs-6" href="mailto:info@promedex.com">
                 <i class="fa-solid fa-envelope"></i>
                 <span>info@promedex.com</span>
               </a>
-              <p class="d-flex align-items-center gap-2 mb-5">
+              <p class="d-flex align-items-center gap-2 mb-5 fs-6">
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <span class="d-block">
                   <a class="d-block text-white text-decoration-none" href="tel:+966 12 612 4949">Tel: +966 12 612 4949 </a>
                   <a class="d-block text-white text-decoration-none" href="tel:+966 12 612 5050">Fax: +966 12 612 5050 </a>
                 </span>
               </p>
-              <ul class="social-icons list-unstyled fs-5">
+              <ul class="social-icons list-unstyled">
                 <li class="nav-item">
                   <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
                 </li>

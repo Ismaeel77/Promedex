@@ -1,0 +1,22 @@
+@import url("./global.css");
+#panner .clients-panner {
+  background-image: url("../assets/clients-panner.png");
+}
+@media (max-width:767px) {
+  .p-footer img:first-child{
+    width: 250px;
+  }
+}
+#client-quote {
+  background: url('../assets/clients-bg.png') no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 40vh;
+}
+#client-quote .caption {
+  position: relative;
+  top: 110px;
+}
+#client-quote .caption p{
+  width: 45%;
+}
