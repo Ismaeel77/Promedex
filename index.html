@@ -17,6 +17,9 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/home.css" />
     <title>Promedex</title>
+    <style>
+      @import './node_modules/animate.css/animate.min.css';
+    </style>
   </head>
   <body>
     <header>
@@ -26,7 +29,7 @@
             <img class="logo img-fluid" decoding="async" src="./assets/logo.png" alt="logo"/>
           </a>
           <a id="phone-icon" class="fs-5 text-decoration-none" href="tel:+96611472800" role="button">
-            <i class="fa-solid fa-phone text-primary"></i>
+            <i class="fa-solid fa-phone"></i>
             +96611472800
           </a>
         </div>
@@ -85,13 +88,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./partners.html" role="button">Partners</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Partner 1</a></li>
-                  <li><a class="dropdown-item" href="#">Partner 2</a></li>
-                  <li><a class="dropdown-item" href="#">Partner 3</a></li>
-                  <li><a class="dropdown-item" href="#">Partner 4</a></li>
-                </ul>
+                <a class="nav-link" href="./partners.html" role="button">Partners</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Patient</a>
@@ -219,7 +216,7 @@
         </div>
       </section>
 
-      <section id="products" class="pb-5 mb-5">
+      <section id="products" class="pb-5 mb-5 animate__animated animate__backInRight animate__slower">
         <div class="container">
           <h2 class="main-heading">our products</h2>
           <div>
@@ -269,7 +266,7 @@
           <section class="about-caption p-5">
             <div class="row">
               <h2 class="main-heading about-investor-head mb-5">about us</h2>
-              <div class="col-md-6 position-relative">
+              <div class="col-md-6 position-relative animate__animated animate__fadeInLeftBig animate__slow animate__delay-3s">
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit
                   vo-luptatem accusantium dolore
@@ -289,9 +286,9 @@
                 </p>
                 <a class="fs-5 btn main-btn readMore" href="#">read more</a>
               </div>
-              <div class="col-md-6 mt-5 mt-md-0">
-                <div class="img-container d-md-flex justify-content-md-between mb-4 w-100">
-                  <div class="mb-3 mb-sm-0">
+              <div class="col-md-6 mt-5 mt-md-0 animate__animated animate__fadeInRightBig animate__slow animate__delay-4s">
+                <div class="img-container d-md-flex justify-content-md-between mb-4 w-100 gap-5">
+                  <div class="mb-3 mb-md-0">
                     <img class="img-fluid" decoding="async" src="./assets/about-us-01.png" alt=""/>
                   </div>
                   <div>
@@ -314,7 +311,7 @@
         </div>
       </section>
 
-      <section id="partners">
+      <section id="partners" class="animate__animated animate__zoomIn animate__delay-5s">
         <div class="container">
           <h2 class="main-heading text-center fs-1">our valuable partners</h2>
           <div class="mySwiper swiper">
@@ -379,7 +376,7 @@
                         <h6 class="img-title main-heading fs-6">
                           news headline 1
                         </h6>
-                        <p class="d-inline-block text-truncate" style="width: 150px">
+                        <p class="d-inline-block">
                           mque laudantium, totam rem aperiam, eaque ipsa quae ab
                           illo invent ore veritatis et perspiciatis unde omnis
                           iste natus error sit voluptatem wed ut perspiciatis
@@ -396,7 +393,7 @@
                         <h6 class="img-title main-heading fs-6">
                           news headline 2
                         </h6>
-                        <p class="d-inline-block text-truncate" style="width: 150px">
+                        <p class="d-inline-block">
                           mque laudantium, totam rem aperiam, eaque ipsa quae ab
                           illo invent ore veritatis et perspiciatis unde omnis
                           iste natus error sit voluptatem wed ut perspiciatis
@@ -413,7 +410,7 @@
                         <h6 class="img-title main-heading fs-6">
                           news headline 3
                         </h6>
-                        <p class="d-inline-block text-truncate" style="width: 150px">
+                        <p class="d-inline-block">
                           mque laudantium, totam rem aperiam, eaque ipsa quae ab
                           illo invent ore veritatis et perspiciatis unde omnis
                           iste natus error sit voluptatem wed ut perspiciatis
@@ -430,7 +427,7 @@
                         <h6 class="img-title main-heading fs-6">
                           news headline 4
                         </h6>
-                        <p class="d-inline-block text-truncate" style="width: 150px">
+                        <p class="d-inline-block">
                           mque laudantium, totam rem aperiam, eaque ipsa quae ab
                           illo invent ore veritatis et perspiciatis unde omnis
                           iste natus error sit voluptatem wed ut perspiciatis
@@ -453,7 +450,7 @@
       <section id="testimonials" class="testimonials pt-5">
         <div class="container">
           <h2 class="main-heading mb-3">testimonials</h2>
-          <div class="d-md-flex justify-content-md-between align-items-md-center gap-md-5" >
+          <div class="d-sm-block d-md-flex justify-content-md-between align-items-md-center gap-md-5" >
             <div class="testi-card position-relative d-flex align-items-center pt-5 pb-5">
               <div class="person-img text-center">
                 <img class="img-fluid mb-2" decoding="async" src="./assets/person-01.png" alt="customer-photo"/>
@@ -463,11 +460,10 @@
                 <span class="d-block text-capitalize fs-5">customer</span>
               </div>
               <div class="review px-3 position-relative">
-                <p class="fs-6">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Rerum, hic, architecto molestias nulla odio possimus ducimus a
-                  vel error explicabo, culpa ea laudantium aut non praesentium
-                  adipisci nemo neque voluptatum.
+                  vel error explicabo.
                 </p>
                 <ul class="list-unstyled ps-2">
                   <li class="nav-item"><i class="fa-solid fa-star"></i></li>
@@ -488,11 +484,10 @@
                 <span class="d-block text-capitalize fs-5">customer</span>
               </div>
               <div class="review px-3 position-relative">
-                <p class="fs-6">
+                <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Rerum, hic, architecto molestias nulla odio possimus ducimus a
-                  vel error explicabo, culpa ea laudantium aut non praesentium
-                  adipisci nemo neque voluptatum.
+                  vel error explicabo.
                 </p>
                 <ul class="list-unstyled ps-2">
                   <li class="nav-item"><i class="fa-solid fa-star"></i></li>
@@ -511,29 +506,29 @@
       <section id="contact-us-1" class="py-5 mt-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <h1 class="contact-head text-capitalize fw-bold">
                 connect <br />
                 with <br />
                 <span>us</span>
               </h1>
             </div>
-            <div class="col-md-8">
-              <div class="mb-4 d-flex justify-content-between gap-3">
+            <div class="col-md-6">
+              <div class="d-flex justify-content-between gap-3">
                 <label class="visually-hidden" for="first-name"></label>
                 <input id="first-name" name="first-name" type="text" class="form-control" placeholder="Name.." />
                 <label class="visually-hidden" for="last-name"></label>
                 <input id="last-name" name="last-name" type="text" class="form-control" placeholder="Last Name.." />
               </div>
-              <div class="mb-4">
+              <div>
                 <label for="email"></label>
                 <input id="email" name="email" type="email" class="form-control" placeholder="Email" />
               </div>
-              <div class="mb-4">
+              <div class="mb-3">
                 <label for="telephone"></label>
                 <input id="telephone" name="telephone" type="tel" class="form-control" placeholder="Phone.." />
               </div>
-              <div class="mb-4">
+              <div class="mb-3">
                 <textarea class="form-control" placeholder="Your Message..."></textarea>
               </div>
               <div>
@@ -558,10 +553,10 @@
               </p>
             </div>
             <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
-              <h4 class="footer-head fw-light text-uppercase fs-5 pb-2">
+              <h4 class="footer-head fw-medium text-uppercase fs-5 pb-2">
                 quick links
               </h4>
-              <ul class="list-unstyled text-capitalize fs-6">
+              <ul class="list-unstyled text-capitalize fs-5">
                 <li class="nav-item mb-2">
                   <a class="nav-link" href="./index.html">home</a>
                 </li>
@@ -589,10 +584,10 @@
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
-              <h4 class="footer-head fw-light text-uppercase fs-5 pb-2">
+              <h4 class="footer-head fw-medium text-uppercase fs-5 pb-2">
                 our services
               </h4>
-              <ul class="list-unstyled text-capitalize fs-6">
+              <ul class="list-unstyled text-capitalize fs-5">
                 <li class="nav-item mb-2">
                   <a class="nav-link" href="./productPage.html">spine</a>
                 </li>
@@ -620,7 +615,7 @@
               </ul>
             </div>
             <div class="col-sm-6 col-md-3">
-              <h4 class="footer-head fw-light text-uppercase fs-5 pb-2">
+              <h4 class="footer-head fw-medium text-uppercase fs-5 pb-2">
                 get in touch
               </h4>
               <p class="d-flex gap-2 fs-6">
@@ -636,7 +631,7 @@
                 <i class="fa-solid fa-envelope"></i>
                 <span>info@promedex.com</span>
               </a>
-              <p class="d-flex align-items-center gap-2 mb-5 fs-6">
+              <p class="d-flex align-items-center gap-2 fs-6">
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <span class="d-block">
                   <a class="d-block text-white text-decoration-none" href="tel:+966 12 612 4949">Tel: +966 12 612 4949 </a>
@@ -666,8 +661,8 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
     <!-- Swiper JS -->
-    <script defer defer src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <!-- Main JS File -->
-    <script defer src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -17,6 +17,9 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/partners.css" />
     <title>Promedex</title>
+    <style>
+      @import './node_modules/animate.css/animate.min.css';
+    </style>
   </head>
   <body>
     <header>
@@ -26,7 +29,7 @@
             <img class="logo img-fluid" src="./assets/logo.png" alt="logo"/>
           </a>
           <a id="phone-icon" class="fs-5 text-decoration-none" href="tel:+96611472800">
-            <i class="fa-solid fa-phone text-primary"></i>
+            <i class="fa-solid fa-phone"></i>
             +96611472800
           </a>
         </div>
@@ -161,7 +164,7 @@
       <section id="globalPartners" class="my-5 py-5">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-7 mb-5 mb-md-0 px-5 px-sm-0">
+            <div class="col-12 col-lg-7 mb-5 mb-md-0 px-5 px-sm-0 animate__animated animate__backInLeft">
               <h2 class="main-heading fs-1 mb-5">our global partners</h2>
               <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
@@ -174,9 +177,7 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla. Aenean in massa lacus.Lorem ipsum dolor sit amet
-                          Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla.
+                          nulla. Aenean in massa lacus.
                         </p>
                       </a>
                     </li>
@@ -188,9 +189,7 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla. Aenean in massa lacus.Lorem ipsum dolor sit amet
-                          Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla.
+                          nulla. Aenean in massa lacus.
                         </p>
                       </a>
                     </li>
@@ -202,9 +201,7 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla. Aenean in massa lacus.Lorem ipsum dolor sit amet
-                          Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla.
+                          nulla. Aenean in massa lacus.
                         </p>
                       </a>
                     </li>
@@ -216,9 +213,7 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla. Aenean in massa lacus.Lorem ipsum dolor sit amet
-                          Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla.
+                          nulla. Aenean in massa lacus.
                         </p>
                       </a>
                     </li>
@@ -230,9 +225,7 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla. Aenean in massa lacus.Lorem ipsum dolor sit amet
-                          Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla.
+                          nulla. Aenean in massa lacus.
                         </p>
                       </a>
                     </li>
@@ -244,9 +237,7 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla. Aenean in massa lacus.Lorem ipsum dolor sit amet
-                          Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla.
+                          nulla. Aenean in massa lacus.
                         </p>
                       </a>
                     </li>
@@ -258,9 +249,7 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla. Aenean in massa lacus.Lorem ipsum dolor sit amet
-                          Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla.
+                          nulla. Aenean in massa lacus.
                         </p>
                       </a>
                     </li>
@@ -272,9 +261,7 @@
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                           Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla. Aenean in massa lacus.Lorem ipsum dolor sit amet
-                          Quisque id magna pulvinar, elementum elit vitae, pretium
-                          nulla.
+                          nulla. Aenean in massa lacus.
                         </p>
                       </a>
                     </li>
@@ -282,7 +269,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5 mt-5 mt-sm-0 animate__animated animate__backInRight animate__slower">
               <a class="btn main-btn d-block w-fit-content mx-auto mb-3 py-2 fs-4 fw-bold" href="./partnerForm.html">
                 become a partner
               </a>
@@ -431,10 +418,10 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
     <!-- Splide JS -->
-    <script defer src="./js/splide.min.js"></script>
+    <script src="./js/splide.min.js"></script>
     <!-- Main JS File -->
-    <script defer src="./js/main.js"></script>
-    <Script defer>
+    <script src="./js/main.js"></script>
+    <Script>
       var splide = new Splide( '.splide', {
         direction: 'ttb',
         height   : '40rem',

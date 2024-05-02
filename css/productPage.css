@@ -11,13 +11,24 @@
     margin-bottom: 0 !important;
   }
 }
-#contact-us-2 {
+#products .mySwiper .main-card::before,
+#products .mySwiper .main-card::after {
+  transition: 0.5s linear all;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -ms-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+}
+.contact-us-2 {
   background-color: var(--bg-color);
 }
-#contact-us-2 h4 {
+.contact-us-2 h4 {
   color: var(--heading-color);
   font-size: 1.5rem;
   text-transform: capitalize;
+}
+.contact-us-2 input:focus {
+  background-color: #fff !important;
 }
 #products .mySwiper .main-card {
   padding: 0;
@@ -48,11 +59,7 @@
   left: 0;
   opacity: 0;
   z-index: 999;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+
 }
 #products .mySwiper .main-card::before {
   content: "";

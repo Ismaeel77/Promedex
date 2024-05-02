@@ -3,7 +3,7 @@ investorAbout()
 newsHandler()
 newsSwiper()
 productSwiper()
-paginate()
+// paginate()
 
 function docTitle() {
   let docTitle = document.querySelector("title");
@@ -16,6 +16,7 @@ function docTitle() {
     }
   });
 }
+
 
 function paginate() {
   // selecting required element
@@ -79,7 +80,6 @@ function paginate() {
     ulPagination.innerHTML = liTag; //add li tag inside ul tag
     return liTag; //reurn the li tag
   }
-
   return ulPagination.innerHTML = createPagination(totalPages, page);
 }
 
@@ -177,10 +177,10 @@ function newsSwiper() {
       dynamicBullets: true,
       clickable: true,
     },
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     mousewheel: true,
     breakpoints: {
       0: {

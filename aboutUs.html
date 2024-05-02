@@ -15,6 +15,9 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/aboutUs.css" />
     <title>Promedex</title>
+    <style>
+      @import './node_modules/animate.css/animate.css';
+    </style>
   </head>
   <body>
     <header>
@@ -24,7 +27,7 @@
             <img class="logo img-fluid" decoding="async" src="./assets/logo.png" alt="logo"/>
           </a>
           <a id="phone-icon" class="fs-5 text-decoration-none" href="tel:+96611472800">
-            <i class="fa-solid fa-phone text-primary"></i>
+            <i class="fa-solid fa-phone"></i>
             +96611472800
           </a>
         </div>
@@ -156,7 +159,7 @@
         <div class="panner-ribbon position-absolute py-3"></div>
       </section>
 
-      <section id="ourStory" class="py-5 bg-light-gray">
+      <section id="ourStory" class="py-5 bg-light-gray animate__animated animate__fadeInRightBig animate__slow">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -177,7 +180,7 @@
                 sit voluptatem illo invent ore verita-tis et perspiciatis unde
                 quae ab illo invent ore verita-tis et perspiciatis unde omnis
               </p>
-              <button class="btn main-btn d-block ms-auto">read more</button>
+              <button class="btn main-btn d-block w-fit-content">read more</button>
             </div>
             <div class="col-12 col-md-6 mt-3 mt-md-0">
               <div class="img-holder text-center">
@@ -188,7 +191,7 @@
         </div>
       </section>
 
-      <section id="president" class="py-5 bg-light-gray">
+      <section id="president" class="py-5 bg-light-gray animate__animated animate__fadeInLeftBig animate__slow animate__delay-2s">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -214,7 +217,7 @@
                 sit voluptatem illo invent ore verita-tis et perspiciatis unde
                 quae ab illo invent ore verita-tis et perspiciatis unde omnis
               </p>
-              <button class="btn main-btn d-block ms-auto">read more</button>
+              <button class="btn main-btn d-block w-fit-content">read more</button>
             </div>
           </div>
         </div>
@@ -351,6 +354,6 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
     <!-- Main JS File -->
-    <script defer src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -2,8 +2,21 @@
 #panner .management-panner {
   background-image: url("../assets/management-panner.jpg");
 }
-.img-caption p {
-  color: var(--secondary-color);
-  font-size: 2rem !important;
+.img-caption h4 {
   text-transform: capitalize;
+}
+.img-caption h6 {
+  color: var(--secondary-color);
+  font-size: 1.8rem !important;
+  text-transform: capitalize;
+}
+.main-card img {
+  height: 350px;
+  max-height: 350px;
+}
+
+@media (max-width:767px) {
+  .img-caption h6 {
+    font-size: 1.4rem !important;
+  }
 }

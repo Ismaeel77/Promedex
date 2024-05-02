@@ -2,10 +2,23 @@
 #panner .clients-panner {
   background-image: url("../assets/clients-panner.png");
 }
-@media (max-width:767px) {
-  .p-footer img:first-child{
-    width: 250px;
-  }
+.p-footer {
+  position: relative;
+  text-align: end;
+}
+.p-footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: calc(100% - 200px);
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+.p-footer img {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
 }
 #client-quote {
   background: url('../assets/clients-bg.png') no-repeat;

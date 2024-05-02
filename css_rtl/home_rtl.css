@@ -1,0 +1,205 @@
+@import url("./global_rtl.css");
+/* Start Slider */
+#slider .panner-ribbon {
+  background-color: rgb(96 148 228 / 75%);
+}
+#slider .bg-1 {
+  background-image: url("../assets/slider-01.png");
+}
+#slider .bg-2 {
+  background-image: url("../assets/slider-02.jpg");
+}
+#slider .bg-3 {
+  background-image: url("../assets/slider-03.jpg");
+}
+#slider .carousel-img {
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+}
+.carousel-control-next, .carousel-control-prev {
+  height: fit-content !important;
+  width: fit-content !important;
+  top: 50% !important;
+  background-color: var(--primary-color);
+  margin: 0 25px;
+  padding: 5px;
+  z-index: 999;
+}
+/* End Slider */
+/* Start Products Section */
+#products .mySwiper .swiper-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 8px 15px #8d8585;
+}
+#products .mySwiper .swiper-card img.swiper-img {
+  width: 100%;
+  max-width: 100%;
+}
+#products .mySwiper .product-card::before,
+#products .mySwiper .product-card::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  opacity: 0;
+  z-index: 999;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#products .mySwiper .product-card::before {
+  content: "";
+  background-color: #a72e37b5;
+  top: 0;
+}
+#products .mySwiper .product-card::after {
+  content: attr(data-text);
+  top: 0;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: start;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: end;
+}
+#products .mySwiper .product-card:hover::before,
+#products .mySwiper .product-card:hover::after {
+  opacity: 1;
+}
+/* End Products Section */
+/* Start About Section */
+#about-us {
+  background-color: var(--bg-color);
+  border-bottom: 2px solid #c0bfbf;
+}
+#about-us .toglle-tabs {
+  position: relative;
+  top: -48px;
+}
+#about-us .readMore{
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+}
+@media (max-width:991px) {
+  #about-us .readMore{
+    bottom: -25px;
+  }
+}
+#about-us .toglle-tabs h2.active,
+#about-us .toglle-tabs h2:hover {
+  background-color: #6d9adf;
+  color: #fff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+#about-us .about-caption p {
+  font-size: 1.2rem;
+  width: 100%;
+}
+#about-us .about-caption .img-container img {
+  width: 280px;
+  height: 100%;
+  box-shadow: 0px 8px 15px #8d8585;
+}
+@media (min-width: 768px) {
+  #about-us .toglle-tabs h2 {
+    color: var(--heading-color);
+    background-color: #efefef;
+    padding: 5px 60px;
+    clip-path: polygon(100% 100%, 90% 0%, 10% 0%, 0% 100%);
+    border-radius: 200px 200px 0 0;
+    -webkit-border-radius: 200px 200px 0 0;
+    -moz-border-radius: 200px 200px 0 0;
+    -ms-border-radius: 200px 200px 0 0;
+    -o-border-radius: 200px 200px 0 0;
+  }
+  #about-us .toglle-tabs h2:first-of-type {
+    margin-left: -15px;
+    z-index: 1001;
+  }
+  #about-us .toglle-tabs h2:nth-of-type(2) {
+    margin-right: -15px;
+    z-index: 1000;
+  }
+}
+/* End About Section */
+/* Start Partners Section */
+#partners .mySwiper .slider-content {
+  padding-right: 15px;
+}
+#partners .partner-card {
+  text-align: center;
+  width: 295px !important;
+  box-shadow: 0px 0px 8px #bdc0c5;
+  padding: 40px;
+  height: 150px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+@media (max-width:767px) {
+  #partners .partner-card {
+    width: 380px !important;
+  }
+  #partners .partner-card:not(:last-child){
+    margin-left: 25px !important;
+  }
+}
+/* End Partners Section */
+#partners .partner-card:not(:last-child),
+#news .news-slider .main-card:not(:last-child){
+  margin-left: 30px;
+}
+/* Start News Section */
+#news .news-slider .main-card.active,
+#news .news-slider .main-card:hover {
+  background-color: var(--secondary-color);
+}
+#news .news-slider .main-card.active > img,
+#news .news-slider .main-card:hover > img {
+  border-bottom: 3px solid var(--secondary-color);
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+#news .news-slider .main-card > img {
+  height: auto;
+  max-height: 130px;
+  overflow-y: hidden;
+  width: 100%;
+  border-bottom: 3px solid #256470;
+}
+/* End News Section */
+/* End Testimonials Section */
+/* Start Contact Us Section */
+#contact-us-1 .contact-head {
+  font-size: 4.5rem;
+  color: var(--primary-color);
+}
+#contact-us-1 .contact-head span {
+  color: var(--secondary-color);
+}
+#contact-us-1 textarea {
+  resize: none;
+  height: 250px;
+}
+#contact-us-1 input[type="submit"] {
+  background-color: var(--primary-color);
+}
+/* End Contact Us Section */

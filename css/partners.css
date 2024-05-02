@@ -2,16 +2,26 @@
 #panner .partners-panner {
   background-image: url("../assets/partners-panner.jpg") !important;
 }
-@media (max-width: 767px) {
-  .vertical-slider-container {
-    height: 650px;
-  }
+.splide__slide {
+  height: fit-content !important;
+  padding-inline: 15px;
 }
 .inner-card {
-  border-top: 2px solid var(--heading-color) !important;
-  border-bottom: none !important;
   align-items: center !important;
-  padding-top: 30px;
+  padding-block: 20px;
+}
+.inner-card::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--heading-color);
+}
+.inner-card p {
+  font-size: 1.125rem;
+  padding-block: 20px;
 }
 .inner-card > div {
   width: 100%;
@@ -25,4 +35,18 @@ button[type="submit"] {
   margin: 0 auto 45px;
   font-weight: bold;
   font-size: 1.2rem;
+}
+@media (max-width:767px) {
+  .splide__slide {
+    margin-bottom: 0 !important;
+  }
+  .inner-card {
+    padding-block: 6px;
+  }
+  .inner-card p {
+    padding-block: 0;
+  }
+  .inner-card img {
+    margin-top: 15px;
+  }
 }
