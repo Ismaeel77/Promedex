@@ -1,3 +1,4 @@
+@import '../node_modules/animate.css/animate.css';
 :root {
   --primary-color: #6094e4;
   --secondary-color: #a72e37;
@@ -478,7 +479,7 @@ header #phone-icon{
 .testimonials .testi-card .person-img img {
   box-shadow: 0px 5px 10px #8d8585;
   background-color: #fff;
-  width:550px;
+  width:750px;
   height: 200px;
   object-fit: cover;
 }
