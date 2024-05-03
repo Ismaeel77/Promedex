@@ -213,7 +213,7 @@
         </div>
       </section>
 
-      <section id="products" class="pb-5 mb-5">
+      <section id="products" class="pb-5 mb-5 overflow-hidden">
         <div class="container">
           <h2 class="main-heading">our products</h2>
           <div>
@@ -222,7 +222,7 @@
             </p>
             <a class="fs-5 btn main-btn" href="./products.html">view all products</a>
           </div>
-          <div class="mySwiper swiper mt-5  animate__animated animate__backInRight animate__slower">
+          <div class="mySwiper swiper mt-5">
             <div class="slider-content swiper-wrapper pb-5">
               <a href="./productPage.html" class="swiper-card swiper-slide product-card" data-text="Endoscopy">
                 <img class="swiper-img img-fluid" decoding="async" src="./assets/product-01.png" alt="Endoscopy"/>
@@ -263,7 +263,7 @@
           <section class="about-caption p-5">
             <div class="row">
               <h2 class="main-heading about-investor-head mb-5">about us</h2>
-              <div class="col-md-6 position-relative animate__animated animate__fadeInLeftBig animate__slow animate__delay-3s">
+              <div class="col-md-6">
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit
                   vo-luptatem accusantium dolore
@@ -281,9 +281,8 @@
                   perspiciatis unde quae ab illo invent ore verita-tis et
                   perspiciatis unde omnis
                 </p>
-                <a class="fs-5 btn main-btn readMore" href="#">read more</a>
               </div>
-              <div class="col-md-6 mt-5 mt-md-0 animate__animated animate__fadeInRightBig animate__slow animate__delay-4s">
+              <div class="col-md-6 my-5 my-md-0">
                 <div class="img-container d-md-flex justify-content-md-between mb-4 w-100 gap-5">
                   <div class="mb-3 mb-md-0">
                     <img class="img-fluid" decoding="async" src="./assets/about-us-01.png" alt=""/>
@@ -303,12 +302,15 @@
                   perspiciatis unde omnis iste natus error sit
                 </p>
               </div>
+              <div class="col-md-6">
+                <a class="fs-5 btn main-btn" href="#">read more</a>
+              </div>
             </div>
           </section>
         </div>
       </section>
 
-      <section id="partners" class="animate__animated animate__zoomIn animate__delay-5s">
+      <section id="partners" class="position-relative">
         <div class="container">
           <h2 class="main-heading text-center fs-1">our valuable partners</h2>
           <div class="mySwiper swiper">
@@ -659,7 +661,26 @@
     <script src="./js/bootstrap.bundle.min.js.map"></script>
     <!-- Swiper JS -->
     <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Animate JS File -->
+    <script src="./js/anime.min.js"></script>
     <!-- Main JS File -->
     <script src="./js/main.js"></script>
+    <script>
+      anime({
+        targets: ['#products .mySwiper'],
+        translateY: 0,
+        duration: 2000,
+      });
+
+      anime({
+        targets: ['.about-caption','#news'],
+        opacity: 1,
+      });
+
+      anime({
+        targets: ['#partners'],
+        translateX: 0,
+      });
+    </script>
   </body>
 </html>

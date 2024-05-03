@@ -156,7 +156,7 @@
         <div class="panner-ribbon position-absolute py-3"></div>
       </section>
 
-      <section class="py-5 my-5 bg-light-gray">
+      <section id="one" class="py-5 my-5 bg-light-gray">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -200,7 +200,7 @@
         </div>
       </section>
 
-      <section class="py-5 my-5">
+      <section id="two" class="py-5 my-5">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -244,7 +244,7 @@
         </div>
       </section>
 
-      <section class="py-5 my-5 bg-light-gray">
+      <section id="three" class="py-5 my-5 bg-light-gray">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -420,7 +420,21 @@
     <!-- Bootstrap JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <!-- Animate JS File -->
+    <script src="./js/anime.min.js"></script>
     <!-- Main JS File -->
     <script src="./js/main.js"></script>
+    <script>
+      anime({
+        targets: ['#one .row','#three .row'],
+        translateX: 0,
+        duration: 2000,
+      });
+
+      anime({
+        targets: ['#two .row'],
+        scale: 1,
+      });
+    </script>
   </body>
 </html>

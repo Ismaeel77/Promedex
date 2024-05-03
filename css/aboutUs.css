@@ -2,6 +2,29 @@
 #panner .about-panner {
   background-image: url("../assets/about-panner.png");
 }
+#ourStory, #president {
+  position: relative;
+  transition: 1200ms linear all;
+  -webkit-transition: 1200ms linear all;
+  -moz-transition: 1200ms linear all;
+  -ms-transition: 1200ms linear all;
+  -o-transition: 1200ms linear all;
+}
+#ourStory {
+  transform: translateX(3000px);
+  -webkit-transform: translateX(3000px);
+  -moz-transform: translateX(3000px);
+  -ms-transform: translateX(3000px);
+  -o-transform: translateX(3000px);
+}
+#president {
+  transition-delay: 2000ms;
+  transform: translateX(-3000px);
+  -webkit-transform: translateX(-3000px);
+  -moz-transform: translateX(-3000px);
+  -ms-transform: translateX(-3000px);
+  -o-transform: translateX(-3000px);
+}
 h2 {
   font-size: 3.5rem !important;
 }

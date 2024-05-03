@@ -156,7 +156,7 @@
         <div class="panner-ribbon position-absolute py-3"></div>
       </section>
 
-      <section id="ourStory" class="py-5 bg-light-gray animate__animated animate__fadeInRightBig animate__slow">
+      <section id="ourStory" class="py-5 bg-light-gray">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -188,7 +188,7 @@
         </div>
       </section>
 
-      <section id="president" class="py-5 bg-light-gray animate__animated animate__fadeInLeftBig animate__slow animate__delay-2s">
+      <section id="president" class="py-5 bg-light-gray">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -350,7 +350,15 @@
     <!-- Bootstrap JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <!-- Animate JS File -->
+    <script src="./js/anime.min.js"></script>
     <!-- Main JS File -->
     <script src="./js/main.js"></script>
+    <script>
+      anime({
+        targets: ['#ourStory','#president'],
+        translateX: 0,
+      });
+    </script>
   </body>
 </html>

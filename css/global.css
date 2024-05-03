@@ -1,4 +1,3 @@
-@import '../node_modules/animate.css/animate.css';
 :root {
   --primary-color: #6094e4;
   --secondary-color: #a72e37;
@@ -28,6 +27,7 @@
 .main-card,
 .form-control,
 .testimonials .testi-card,
+.testimonials .testi-card::before,
 input,
 textarea{
   transition: 0.3s linear all;
@@ -176,9 +176,6 @@ ul{
 }
 .w-fit-content {
   width: fit-content;
-}
-.about-investor {
-  cursor: pointer !important;
 }
 .form-container {
   background-color: var(--bg-color);
@@ -376,7 +373,8 @@ header #phone-icon{
 /* End Slider Section */
 /* Start Vertical Slider */
 .splide__slide:hover a.inner-card{
-  box-shadow: 0 0 8px #474747;
+  box-shadow: -7px 7px 8px #474747;
+  /* box-shadow: 0 0 8px #474747; */
 }
 .splide__pagination--ttb {
   right: -0.5rem;
@@ -472,6 +470,9 @@ header #phone-icon{
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+.testimonials .testi-card:hover::before {
+  box-shadow: -15px 13px 5px #474747;
 }
 .testimonials .testi-card .person-img {
   position: relative;

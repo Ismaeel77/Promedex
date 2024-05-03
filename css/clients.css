@@ -2,6 +2,38 @@
 #panner .clients-panner {
   background-image: url("../assets/clients-panner.png");
 }
+#one .row, #two .row, #three .row {
+  position: relative;
+  transition: 1200ms linear all;
+  -webkit-transition: 1200ms linear all;
+  -moz-transition: 1200ms linear all;
+  -ms-transition: 1200ms linear all;
+  -o-transition: 1200ms linear all;
+}
+#one .row {
+  transition-delay: 1000ms;
+  transform: translateX(3000px);
+  -webkit-transform: translateX(3000px);
+  -moz-transform: translateX(3000px);
+  -ms-transform: translateX(3000px);
+  -o-transform: translateX(3000px);
+}
+#two .row {
+  transition-delay: 2000ms;
+  transform: scale(0,0);
+  -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  -o-transform: scale(0,0);
+}
+#three .row {
+  transition-delay: 3000ms;
+  transform: translateX(-3000px);
+  -webkit-transform: translateX(-3000px);
+  -moz-transform: translateX(-3000px);
+  -ms-transform: translateX(-3000px);
+  -o-transform: translateX(-3000px);
+} 
 .p-footer {
   position: relative;
   text-align: end;

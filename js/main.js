@@ -135,6 +135,7 @@ function newsHandler() {
   }
 }
 
+
 function productSwiper() {
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
@@ -163,6 +164,7 @@ function productSwiper() {
       },
     },
   });
+  return swiper;
 }
 
 function newsSwiper() {
@@ -194,4 +196,6 @@ function newsSwiper() {
       },
     },
   });
+  return newsSwiper;
 }
+
