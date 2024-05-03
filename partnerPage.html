@@ -153,13 +153,13 @@
         <div class="panner-ribbon position-absolute py-3"></div>
       </section>
 
-      <section id="partner" class="py-5 my-5">
+      <section id="partner" class="py-5 my-5 overflow-hidden">
         <div class="container">
           <h2 class="mb-5 text-center text-sm-start">
             <img src="./assets/partner-01.png" decoding="async" alt="Kinamed" />
           </h2>
           <div class="row">
-            <div class="col-md-6 lh-lg">
+            <div class="partner-text col-md-6 lh-lg">
               <p>
                 Established in 1987, Kinamed designs and manufactures
                 implantables and instruments for the orthopedics, cardiothoracic
@@ -199,7 +199,7 @@
                 the California Department of Health Services.
               </p>
             </div>
-            <div class="col-md-6 text-center">
+            <div class="partner-img col-md-6 text-center">
               <img class="img-fluid mb-5" decoding="async" src="./assets/tool-01.jpg" alt="tool"/>
               <a class="btn main-btn d-block ms-auto me-auto w-fit-content" href="#">vist website</a>
             </div>
@@ -360,7 +360,20 @@
     <!-- Bootstrap JS -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <!-- Animate JS File -->
+    <script src="./js/anime.min.js"></script>
     <!-- Main JS File -->
     <script src="./js/main.js"></script>
+    <script>
+      anime({
+        targets: ['#partner .partner-img'],
+        translateY: 0,
+      });
+
+      anime({
+        targets: ['#partner .partner-text'],
+        scale: 1,
+      });
+    </script>
   </body>
 </html>

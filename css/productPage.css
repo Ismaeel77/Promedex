@@ -11,6 +11,30 @@
     margin-bottom: 0 !important;
   }
 }
+/* Start Product Description */
+#product .product-img , #product .product-text {
+  transition: 1200ms ease-in 1000ms all;
+  -webkit-transition: 1200ms ease-in 1000ms all;
+  -moz-transition: 1200ms ease-in 1000ms all;
+  -ms-transition: 1200ms ease-in 1000ms all;
+  -o-transition: 1200ms ease-in 1000ms all;
+}
+#product .product-img {
+  transform: translateX(-1500px);
+  -webkit-transform: translateX(-1500px);
+  -moz-transform: translateX(-1500px);
+  -ms-transform: translateX(-1500px);
+  -o-transform: translateX(-1500px);
+}
+#product .product-text {
+  transform: translateX(1500px);
+  -webkit-transform: translateX(1500px);
+  -moz-transform: translateX(1500px);
+  -ms-transform: translateX(1500px);
+  -o-transform: translateX(1500px);
+}
+/* Start Product Description */
+/* Start Products Slider */
 #products .mySwiper .main-card::before,
 #products .mySwiper .main-card::after {
   transition: 0.5s linear all;
@@ -85,6 +109,7 @@
 #products .mySwiper .swiper-card:hover span {
   display: none;
 }
+/* End Products Slider */
 /* Start Faq Section */
 #faq .faq-container img {
   width: 100%;

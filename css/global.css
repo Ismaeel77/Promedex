@@ -430,6 +430,7 @@ header #phone-icon{
 .main-card img {
   width: 100%;
   object-fit: cover;
+  object-position: top;
   overflow: hidden;
 }
 .main-card .img-caption {

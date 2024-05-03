@@ -21,13 +21,44 @@
     font-size: 1.25rem;
   }
 }
+#partner .partner-text, #partner .partner-img {
+  transition: 1200ms ease-in 1000ms all;
+  -webkit-transition: 1200ms ease-in 1000ms all;
+  -moz-transition: 1200ms ease-in 1000ms all;
+  -ms-transition: 1200ms ease-in 1000ms all;
+  -o-transition: 1200ms ease-in 1000ms all;
+}
+#partner .partner-text {
+  transform: scale(0,0);
+  -webkit-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -ms-transform: scale(0,0);
+  -o-transform: scale(0,0);
+}
+#partner .partner-img {
+  transform: translateY(-700px);
+  -webkit-transform: translateY(-700px);
+  -moz-transform: translateY(-700px);
+  -ms-transform: translateY(-700px);
+  -o-transform: translateY(-700px);
+}
 .card {
   border: 5px solid #ddd;
+  transition: 0.3s linear all;
+  -webkit-transition: 0.3s linear all;
+  -moz-transition: 0.3s linear all;
+  -ms-transition: 0.3s linear all;
+  -o-transition: 0.3s linear all;
+}
+.card:hover {
+  box-shadow: 0 0 8px #474747;
 }
 .card img {
   border-bottom: 5px solid var(--heading-color);
-  height: auto;
+  height: 370px;
   max-height: 370px;
+  object-fit: cover;
+  object-position: top;
   overflow-y: hidden;
 }
 .card .card-title {
